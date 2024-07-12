@@ -26,7 +26,6 @@ type Callbacks struct {
 	onCDemoAnimationData                                   []func(*dota.CDemoAnimationData) error
 	onCDemoAnimationHeader                                 []func(*dota.CDemoAnimationHeader) error
 	onCNETMsg_NOP                                          []func(*dota.CNETMsg_NOP) error
-	onCNETMsg_Disconnect_Legacy                            []func(*dota.CNETMsg_Disconnect_Legacy) error
 	onCNETMsg_SplitScreenUser                              []func(*dota.CNETMsg_SplitScreenUser) error
 	onCNETMsg_Tick                                         []func(*dota.CNETMsg_Tick) error
 	onCNETMsg_StringCmd                                    []func(*dota.CNETMsg_StringCmd) error
@@ -65,7 +64,6 @@ type Callbacks struct {
 	onCSVCMsg_FullFrameSplit                               []func(*dota.CSVCMsg_FullFrameSplit) error
 	onCSVCMsg_RconServerDetails                            []func(*dota.CSVCMsg_RconServerDetails) error
 	onCSVCMsg_UserMessage                                  []func(*dota.CSVCMsg_UserMessage) error
-	onCSVCMsg_HltvReplay                                   []func(*dota.CSVCMsg_HltvReplay) error
 	onCSVCMsg_Broadcast_Command                            []func(*dota.CSVCMsg_Broadcast_Command) error
 	onCSVCMsg_HltvFixupOperatorStatus                      []func(*dota.CSVCMsg_HltvFixupOperatorStatus) error
 	onCUserMessageAchievementEvent                         []func(*dota.CUserMessageAchievementEvent) error
@@ -383,11 +381,6 @@ func (c *Callbacks) OnCNETMsg_NOP(fn func(*dota.CNETMsg_NOP) error) {
 	c.onCNETMsg_NOP = append(c.onCNETMsg_NOP, fn)
 }
 
-// OnCNETMsg_Disconnect_Legacy registers a callback for NET_Messages_net_Disconnect_Legacy
-func (c *Callbacks) OnCNETMsg_Disconnect_Legacy(fn func(*dota.CNETMsg_Disconnect_Legacy) error) {
-	c.onCNETMsg_Disconnect_Legacy = append(c.onCNETMsg_Disconnect_Legacy, fn)
-}
-
 // OnCNETMsg_SplitScreenUser registers a callback for NET_Messages_net_SplitScreenUser
 func (c *Callbacks) OnCNETMsg_SplitScreenUser(fn func(*dota.CNETMsg_SplitScreenUser) error) {
 	c.onCNETMsg_SplitScreenUser = append(c.onCNETMsg_SplitScreenUser, fn)
@@ -576,11 +569,6 @@ func (c *Callbacks) OnCSVCMsg_RconServerDetails(fn func(*dota.CSVCMsg_RconServer
 // OnCSVCMsg_UserMessage registers a callback for SVC_Messages_svc_UserMessage
 func (c *Callbacks) OnCSVCMsg_UserMessage(fn func(*dota.CSVCMsg_UserMessage) error) {
 	c.onCSVCMsg_UserMessage = append(c.onCSVCMsg_UserMessage, fn)
-}
-
-// OnCSVCMsg_HltvReplay registers a callback for SVC_Messages_svc_HltvReplay
-func (c *Callbacks) OnCSVCMsg_HltvReplay(fn func(*dota.CSVCMsg_HltvReplay) error) {
-	c.onCSVCMsg_HltvReplay = append(c.onCSVCMsg_HltvReplay, fn)
 }
 
 // OnCSVCMsg_Broadcast_Command registers a callback for SVC_Messages_svc_Broadcast_Command
@@ -2017,25 +2005,6 @@ func (c *Callbacks) callByPacketType(t int32, buf []byte) error {
 
 		return nil
 
-	case 1: // dota.NET_Messages_net_Disconnect_Legacy
-		if c.onCNETMsg_Disconnect_Legacy == nil {
-			return nil
-		}
-
-		msg := &dota.CNETMsg_Disconnect_Legacy{}
-		c.pb.SetBuf(buf)
-		if err := c.pb.Unmarshal(msg); err != nil {
-			return err
-		}
-
-		for _, fn := range c.onCNETMsg_Disconnect_Legacy {
-			if err := fn(msg); err != nil {
-				return err
-			}
-		}
-
-		return nil
-
 	case 3: // dota.NET_Messages_net_SplitScreenUser
 		if c.onCNETMsg_SplitScreenUser == nil {
 			return nil
@@ -2751,25 +2720,6 @@ func (c *Callbacks) callByPacketType(t int32, buf []byte) error {
 		}
 
 		for _, fn := range c.onCSVCMsg_UserMessage {
-			if err := fn(msg); err != nil {
-				return err
-			}
-		}
-
-		return nil
-
-	case 73: // dota.SVC_Messages_svc_HltvReplay
-		if c.onCSVCMsg_HltvReplay == nil {
-			return nil
-		}
-
-		msg := &dota.CSVCMsg_HltvReplay{}
-		c.pb.SetBuf(buf)
-		if err := c.pb.Unmarshal(msg); err != nil {
-			return err
-		}
-
-		for _, fn := range c.onCSVCMsg_HltvReplay {
 			if err := fn(msg); err != nil {
 				return err
 			}
