@@ -74,7 +74,6 @@ enum EDotaUserMessages {
 	DOTA_UM_BoosterState = 528;
 	DOTA_UM_WillPurchaseAlert = 529;
 	DOTA_UM_TutorialMinimapPosition = 530;
-	DOTA_UM_PlayerMMR = 531;
 	DOTA_UM_AbilitySteal = 532;
 	DOTA_UM_CourierKilledAlert = 533;
 	DOTA_UM_EnemyItemAlert = 534;
@@ -168,6 +167,7 @@ enum EDotaUserMessages {
 	DOTA_UM_GiftPlayer = 623;
 	DOTA_UM_FacetPing = 624;
 	DOTA_UM_InnatePing = 625;
+	DOTA_UM_RoshanTimer = 626;
 }
 
 enum DOTA_CHAT_MESSAGE {
@@ -601,6 +601,11 @@ message CDOTAUserMsg_RadarAlert {
 	optional bool negative = 2;
 }
 
+message CDOTAUserMsg_RoshanTimer {
+	optional int32 player_id = 1;
+	optional bool negative = 2;
+}
+
 message CDOTAUserMsg_WillPurchaseAlert {
 	optional int32 item_ability_id = 1;
 	optional int32 player_id = 2;
@@ -748,26 +753,6 @@ message CDOTAUserMsg_HalloweenDrops {
 	repeated uint32 item_defs = 1;
 	repeated int32 player_ids = 2;
 	optional uint32 prize_list = 3;
-}
-
-message CDOTAUserMsg_PredictionResult {
-	message Prediction {
-		enum EResult {
-			k_eResult_ItemGranted = 1;
-			k_eResult_Destroyed = 2;
-		}
-
-		optional uint32 item_def = 1;
-		optional uint32 num_correct = 2;
-		optional uint32 num_fails = 3;
-		optional CDOTAUserMsg_PredictionResult.Prediction.EResult result = 4;
-		repeated uint32 granted_item_defs = 6;
-	}
-
-	optional uint32 account_id = 1;
-	optional uint64 match_id = 2;
-	optional bool correct = 3;
-	repeated CDOTAUserMsg_PredictionResult.Prediction predictions = 4;
 }
 
 message CDOTAResponseQuerySerialized {
@@ -1106,10 +1091,6 @@ message CDOTAUserMsg_BoosterStatePlayer {
 
 message CDOTAUserMsg_BoosterState {
 	repeated CDOTAUserMsg_BoosterStatePlayer boosted_players = 1;
-}
-
-message CDOTAUserMsg_PlayerMMR {
-	repeated sint32 mmr = 1;
 }
 
 message CDOTAUserMsg_AbilitySteal {

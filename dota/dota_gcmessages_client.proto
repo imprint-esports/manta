@@ -670,6 +670,14 @@ message CMsgDOTACompendiumSelectionResponse {
 	optional uint32 eresult = 1;
 }
 
+message CMsgDOTACompendiumRemoveAllSelections {
+	optional uint32 leagueid = 1;
+}
+
+message CMsgDOTACompendiumRemoveAllSelectionsResponse {
+	optional uint32 eresult = 1;
+}
+
 message CMsgDOTACompendiumData {
 	repeated CMsgDOTACompendiumSelection selections = 1;
 }

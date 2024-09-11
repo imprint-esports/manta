@@ -186,7 +186,6 @@ type Callbacks struct {
 	onCDOTAUserMsg_BoosterState                            []func(*dota.CDOTAUserMsg_BoosterState) error
 	onCDOTAUserMsg_WillPurchaseAlert                       []func(*dota.CDOTAUserMsg_WillPurchaseAlert) error
 	onCDOTAUserMsg_TutorialMinimapPosition                 []func(*dota.CDOTAUserMsg_TutorialMinimapPosition) error
-	onCDOTAUserMsg_PlayerMMR                               []func(*dota.CDOTAUserMsg_PlayerMMR) error
 	onCDOTAUserMsg_AbilitySteal                            []func(*dota.CDOTAUserMsg_AbilitySteal) error
 	onCDOTAUserMsg_CourierKilledAlert                      []func(*dota.CDOTAUserMsg_CourierKilledAlert) error
 	onCDOTAUserMsg_EnemyItemAlert                          []func(*dota.CDOTAUserMsg_EnemyItemAlert) error
@@ -197,7 +196,6 @@ type Callbacks struct {
 	onCDOTAUserMsg_CustomHeaderMessage                     []func(*dota.CDOTAUserMsg_CustomHeaderMessage) error
 	onCDOTAUserMsg_QuickBuyAlert                           []func(*dota.CDOTAUserMsg_QuickBuyAlert) error
 	onCDOTAUserMsg_StatsHeroMinuteDetails                  []func(*dota.CDOTAUserMsg_StatsHeroMinuteDetails) error
-	onCDOTAUserMsg_PredictionResult                        []func(*dota.CDOTAUserMsg_PredictionResult) error
 	onCDOTAUserMsg_ModifierAlert                           []func(*dota.CDOTAUserMsg_ModifierAlert) error
 	onCDOTAUserMsg_HPManaAlert                             []func(*dota.CDOTAUserMsg_HPManaAlert) error
 	onCDOTAUserMsg_GlyphAlert                              []func(*dota.CDOTAUserMsg_GlyphAlert) error
@@ -276,6 +274,7 @@ type Callbacks struct {
 	onCDOTAUserMsg_GiftPlayer                              []func(*dota.CDOTAUserMsg_GiftPlayer) error
 	onCDOTAUserMsg_FacetPing                               []func(*dota.CDOTAUserMsg_FacetPing) error
 	onCDOTAUserMsg_InnatePing                              []func(*dota.CDOTAUserMsg_InnatePing) error
+	onCDOTAUserMsg_RoshanTimer                             []func(*dota.CDOTAUserMsg_RoshanTimer) error
 
 	pb *proto.Buffer
 }
@@ -1181,11 +1180,6 @@ func (c *Callbacks) OnCDOTAUserMsg_TutorialMinimapPosition(fn func(*dota.CDOTAUs
 	c.onCDOTAUserMsg_TutorialMinimapPosition = append(c.onCDOTAUserMsg_TutorialMinimapPosition, fn)
 }
 
-// OnCDOTAUserMsg_PlayerMMR registers a callback for EDotaUserMessages_DOTA_UM_PlayerMMR
-func (c *Callbacks) OnCDOTAUserMsg_PlayerMMR(fn func(*dota.CDOTAUserMsg_PlayerMMR) error) {
-	c.onCDOTAUserMsg_PlayerMMR = append(c.onCDOTAUserMsg_PlayerMMR, fn)
-}
-
 // OnCDOTAUserMsg_AbilitySteal registers a callback for EDotaUserMessages_DOTA_UM_AbilitySteal
 func (c *Callbacks) OnCDOTAUserMsg_AbilitySteal(fn func(*dota.CDOTAUserMsg_AbilitySteal) error) {
 	c.onCDOTAUserMsg_AbilitySteal = append(c.onCDOTAUserMsg_AbilitySteal, fn)
@@ -1234,11 +1228,6 @@ func (c *Callbacks) OnCDOTAUserMsg_QuickBuyAlert(fn func(*dota.CDOTAUserMsg_Quic
 // OnCDOTAUserMsg_StatsHeroMinuteDetails registers a callback for EDotaUserMessages_DOTA_UM_StatsHeroDetails
 func (c *Callbacks) OnCDOTAUserMsg_StatsHeroMinuteDetails(fn func(*dota.CDOTAUserMsg_StatsHeroMinuteDetails) error) {
 	c.onCDOTAUserMsg_StatsHeroMinuteDetails = append(c.onCDOTAUserMsg_StatsHeroMinuteDetails, fn)
-}
-
-// OnCDOTAUserMsg_PredictionResult registers a callback for EDotaUserMessages_DOTA_UM_PredictionResult
-func (c *Callbacks) OnCDOTAUserMsg_PredictionResult(fn func(*dota.CDOTAUserMsg_PredictionResult) error) {
-	c.onCDOTAUserMsg_PredictionResult = append(c.onCDOTAUserMsg_PredictionResult, fn)
 }
 
 // OnCDOTAUserMsg_ModifierAlert registers a callback for EDotaUserMessages_DOTA_UM_ModifierAlert
@@ -1629,6 +1618,11 @@ func (c *Callbacks) OnCDOTAUserMsg_FacetPing(fn func(*dota.CDOTAUserMsg_FacetPin
 // OnCDOTAUserMsg_InnatePing registers a callback for EDotaUserMessages_DOTA_UM_InnatePing
 func (c *Callbacks) OnCDOTAUserMsg_InnatePing(fn func(*dota.CDOTAUserMsg_InnatePing) error) {
 	c.onCDOTAUserMsg_InnatePing = append(c.onCDOTAUserMsg_InnatePing, fn)
+}
+
+// OnCDOTAUserMsg_RoshanTimer registers a callback for EDotaUserMessages_DOTA_UM_RoshanTimer
+func (c *Callbacks) OnCDOTAUserMsg_RoshanTimer(fn func(*dota.CDOTAUserMsg_RoshanTimer) error) {
+	c.onCDOTAUserMsg_RoshanTimer = append(c.onCDOTAUserMsg_RoshanTimer, fn)
 }
 
 func (c *Callbacks) callByDemoType(t int32, buf []byte) error {
@@ -5045,25 +5039,6 @@ func (c *Callbacks) callByPacketType(t int32, buf []byte) error {
 
 		return nil
 
-	case 531: // dota.EDotaUserMessages_DOTA_UM_PlayerMMR
-		if c.onCDOTAUserMsg_PlayerMMR == nil {
-			return nil
-		}
-
-		msg := &dota.CDOTAUserMsg_PlayerMMR{}
-		c.pb.SetBuf(buf)
-		if err := c.pb.Unmarshal(msg); err != nil {
-			return err
-		}
-
-		for _, fn := range c.onCDOTAUserMsg_PlayerMMR {
-			if err := fn(msg); err != nil {
-				return err
-			}
-		}
-
-		return nil
-
 	case 532: // dota.EDotaUserMessages_DOTA_UM_AbilitySteal
 		if c.onCDOTAUserMsg_AbilitySteal == nil {
 			return nil
@@ -5247,25 +5222,6 @@ func (c *Callbacks) callByPacketType(t int32, buf []byte) error {
 		}
 
 		for _, fn := range c.onCDOTAUserMsg_StatsHeroMinuteDetails {
-			if err := fn(msg); err != nil {
-				return err
-			}
-		}
-
-		return nil
-
-	case 542: // dota.EDotaUserMessages_DOTA_UM_PredictionResult
-		if c.onCDOTAUserMsg_PredictionResult == nil {
-			return nil
-		}
-
-		msg := &dota.CDOTAUserMsg_PredictionResult{}
-		c.pb.SetBuf(buf)
-		if err := c.pb.Unmarshal(msg); err != nil {
-			return err
-		}
-
-		for _, fn := range c.onCDOTAUserMsg_PredictionResult {
 			if err := fn(msg); err != nil {
 				return err
 			}
@@ -6748,6 +6704,25 @@ func (c *Callbacks) callByPacketType(t int32, buf []byte) error {
 		}
 
 		for _, fn := range c.onCDOTAUserMsg_InnatePing {
+			if err := fn(msg); err != nil {
+				return err
+			}
+		}
+
+		return nil
+
+	case 626: // dota.EDotaUserMessages_DOTA_UM_RoshanTimer
+		if c.onCDOTAUserMsg_RoshanTimer == nil {
+			return nil
+		}
+
+		msg := &dota.CDOTAUserMsg_RoshanTimer{}
+		c.pb.SetBuf(buf)
+		if err := c.pb.Unmarshal(msg); err != nil {
+			return err
+		}
+
+		for _, fn := range c.onCDOTAUserMsg_RoshanTimer {
 			if err := fn(msg); err != nil {
 				return err
 			}

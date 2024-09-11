@@ -114,6 +114,8 @@ enum EDotaClientMessages {
 	DOTA_CM_FacetAlert = 810;
 	DOTA_CM_InnateAlert = 811;
 	DOTA_CM_SelectOverworldID = 812;
+	DOTA_CM_RerollNeutralItem = 813;
+	DOTA_CM_RoshanTimer = 814;
 }
 
 message CDOTAClientMsg_MapPing {
@@ -575,6 +577,11 @@ message CDOTAClientMsg_ChooseNeutralItem {
 	optional int32 slot_index = 3;
 }
 
+message CDOTAClientMsg_RerollNeutralItem {
+	optional int32 target_entindex = 1;
+	optional int32 slot_index = 2;
+}
+
 message CDOTAClientMsg_PlayerDraftPick {
 	optional int32 player_id = 1;
 }
@@ -619,4 +626,8 @@ message CDOTAClientMsg_InnateAlert {
 
 message CDOTAClientMsg_SelectOverworldID {
 	optional uint32 overworld_id = 1;
+}
+
+message CDOTAClientMsg_RoshanTimer {
+	optional bool negative = 1;
 }
