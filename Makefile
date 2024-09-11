@@ -47,7 +47,6 @@ update-protobufs:
 	$(SED) -i 's/\.CMsgShowcaseItem/CMsgShowcaseItem/g' dota/*.proto
 	$(SED) -i 's/\.CMsgShowcaseBackground/CMsgShowcaseBackground/g' dota/*.proto
 	protoc -I dota --go_out=paths=source_relative:dota  dota/*.proto
-
 generate:
 	go run gen/callbacks.go
 
