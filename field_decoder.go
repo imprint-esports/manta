@@ -38,7 +38,7 @@ var fieldTypeDecoders = map[string]fieldDecoder{
 	"GameTime_t":    noscaleDecoder,
 	"BloodType":     unsignedDecoder,
 	"HeroID_t":      signedDecoder,
-	"HeroFacetID_t": signedDecoder,
+	"HeroFacetID_t": unsigned64Decoder,
 
 	"CBodyComponent":       componentDecoder,
 	"CGameSceneNodeHandle": unsignedDecoder,
