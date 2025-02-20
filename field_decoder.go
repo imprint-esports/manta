@@ -40,6 +40,7 @@ var fieldTypeDecoders = map[string]fieldDecoder{
 	"HeroID_t":       signedDecoder,
 	"HeroFacetKey_t": unsigned64Decoder,
 
+
 	"CBodyComponent":       componentDecoder,
 	"CGameSceneNodeHandle": unsignedDecoder,
 	"Color":                unsignedDecoder,
