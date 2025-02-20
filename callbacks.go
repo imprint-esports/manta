@@ -25,8 +25,8 @@ type Callbacks struct {
 	onCDemoSpawnGroups                                     []func(*dota.CDemoSpawnGroups) error
 	onCDemoAnimationData                                   []func(*dota.CDemoAnimationData) error
 	onCDemoAnimationHeader                                 []func(*dota.CDemoAnimationHeader) error
+	onCDemoRecovery                                        []func(*dota.CDemoRecovery) error
 	onCNETMsg_NOP                                          []func(*dota.CNETMsg_NOP) error
-	onCNETMsg_Disconnect_Legacy                            []func(*dota.CNETMsg_Disconnect_Legacy) error
 	onCNETMsg_SplitScreenUser                              []func(*dota.CNETMsg_SplitScreenUser) error
 	onCNETMsg_Tick                                         []func(*dota.CNETMsg_Tick) error
 	onCNETMsg_StringCmd                                    []func(*dota.CNETMsg_StringCmd) error
@@ -65,7 +65,6 @@ type Callbacks struct {
 	onCSVCMsg_FullFrameSplit                               []func(*dota.CSVCMsg_FullFrameSplit) error
 	onCSVCMsg_RconServerDetails                            []func(*dota.CSVCMsg_RconServerDetails) error
 	onCSVCMsg_UserMessage                                  []func(*dota.CSVCMsg_UserMessage) error
-	onCSVCMsg_HltvReplay                                   []func(*dota.CSVCMsg_HltvReplay) error
 	onCSVCMsg_Broadcast_Command                            []func(*dota.CSVCMsg_Broadcast_Command) error
 	onCSVCMsg_HltvFixupOperatorStatus                      []func(*dota.CSVCMsg_HltvFixupOperatorStatus) error
 	onCUserMessageAchievementEvent                         []func(*dota.CUserMessageAchievementEvent) error
@@ -188,7 +187,6 @@ type Callbacks struct {
 	onCDOTAUserMsg_BoosterState                            []func(*dota.CDOTAUserMsg_BoosterState) error
 	onCDOTAUserMsg_WillPurchaseAlert                       []func(*dota.CDOTAUserMsg_WillPurchaseAlert) error
 	onCDOTAUserMsg_TutorialMinimapPosition                 []func(*dota.CDOTAUserMsg_TutorialMinimapPosition) error
-	onCDOTAUserMsg_PlayerMMR                               []func(*dota.CDOTAUserMsg_PlayerMMR) error
 	onCDOTAUserMsg_AbilitySteal                            []func(*dota.CDOTAUserMsg_AbilitySteal) error
 	onCDOTAUserMsg_CourierKilledAlert                      []func(*dota.CDOTAUserMsg_CourierKilledAlert) error
 	onCDOTAUserMsg_EnemyItemAlert                          []func(*dota.CDOTAUserMsg_EnemyItemAlert) error
@@ -199,7 +197,6 @@ type Callbacks struct {
 	onCDOTAUserMsg_CustomHeaderMessage                     []func(*dota.CDOTAUserMsg_CustomHeaderMessage) error
 	onCDOTAUserMsg_QuickBuyAlert                           []func(*dota.CDOTAUserMsg_QuickBuyAlert) error
 	onCDOTAUserMsg_StatsHeroMinuteDetails                  []func(*dota.CDOTAUserMsg_StatsHeroMinuteDetails) error
-	onCDOTAUserMsg_PredictionResult                        []func(*dota.CDOTAUserMsg_PredictionResult) error
 	onCDOTAUserMsg_ModifierAlert                           []func(*dota.CDOTAUserMsg_ModifierAlert) error
 	onCDOTAUserMsg_HPManaAlert                             []func(*dota.CDOTAUserMsg_HPManaAlert) error
 	onCDOTAUserMsg_GlyphAlert                              []func(*dota.CDOTAUserMsg_GlyphAlert) error
@@ -278,6 +275,10 @@ type Callbacks struct {
 	onCDOTAUserMsg_GiftPlayer                              []func(*dota.CDOTAUserMsg_GiftPlayer) error
 	onCDOTAUserMsg_FacetPing                               []func(*dota.CDOTAUserMsg_FacetPing) error
 	onCDOTAUserMsg_InnatePing                              []func(*dota.CDOTAUserMsg_InnatePing) error
+	onCDOTAUserMsg_RoshanTimer                             []func(*dota.CDOTAUserMsg_RoshanTimer) error
+	onCDOTAUserMsg_NeutralCraftAvailable                   []func(*dota.CDOTAUserMsg_NeutralCraftAvailable) error
+	onCDOTAUserMsg_TimerAlert                              []func(*dota.CDOTAUserMsg_TimerAlert) error
+	onCDOTAUserMsg_MadstoneAlert                           []func(*dota.CDOTAUserMsg_MadstoneAlert) error
 
 	pb *proto.Buffer
 }
@@ -378,14 +379,14 @@ func (c *Callbacks) OnCDemoAnimationHeader(fn func(*dota.CDemoAnimationHeader) e
 	c.onCDemoAnimationHeader = append(c.onCDemoAnimationHeader, fn)
 }
 
+// OnCDemoRecovery registers a callback EDemoCommands_DEM_Recovery
+func (c *Callbacks) OnCDemoRecovery(fn func(*dota.CDemoRecovery) error) {
+	c.onCDemoRecovery = append(c.onCDemoRecovery, fn)
+}
+
 // OnCNETMsg_NOP registers a callback for NET_Messages_net_NOP
 func (c *Callbacks) OnCNETMsg_NOP(fn func(*dota.CNETMsg_NOP) error) {
 	c.onCNETMsg_NOP = append(c.onCNETMsg_NOP, fn)
-}
-
-// OnCNETMsg_Disconnect_Legacy registers a callback for NET_Messages_net_Disconnect_Legacy
-func (c *Callbacks) OnCNETMsg_Disconnect_Legacy(fn func(*dota.CNETMsg_Disconnect_Legacy) error) {
-	c.onCNETMsg_Disconnect_Legacy = append(c.onCNETMsg_Disconnect_Legacy, fn)
 }
 
 // OnCNETMsg_SplitScreenUser registers a callback for NET_Messages_net_SplitScreenUser
@@ -576,11 +577,6 @@ func (c *Callbacks) OnCSVCMsg_RconServerDetails(fn func(*dota.CSVCMsg_RconServer
 // OnCSVCMsg_UserMessage registers a callback for SVC_Messages_svc_UserMessage
 func (c *Callbacks) OnCSVCMsg_UserMessage(fn func(*dota.CSVCMsg_UserMessage) error) {
 	c.onCSVCMsg_UserMessage = append(c.onCSVCMsg_UserMessage, fn)
-}
-
-// OnCSVCMsg_HltvReplay registers a callback for SVC_Messages_svc_HltvReplay
-func (c *Callbacks) OnCSVCMsg_HltvReplay(fn func(*dota.CSVCMsg_HltvReplay) error) {
-	c.onCSVCMsg_HltvReplay = append(c.onCSVCMsg_HltvReplay, fn)
 }
 
 // OnCSVCMsg_Broadcast_Command registers a callback for SVC_Messages_svc_Broadcast_Command
@@ -1193,11 +1189,6 @@ func (c *Callbacks) OnCDOTAUserMsg_TutorialMinimapPosition(fn func(*dota.CDOTAUs
 	c.onCDOTAUserMsg_TutorialMinimapPosition = append(c.onCDOTAUserMsg_TutorialMinimapPosition, fn)
 }
 
-// OnCDOTAUserMsg_PlayerMMR registers a callback for EDotaUserMessages_DOTA_UM_PlayerMMR
-func (c *Callbacks) OnCDOTAUserMsg_PlayerMMR(fn func(*dota.CDOTAUserMsg_PlayerMMR) error) {
-	c.onCDOTAUserMsg_PlayerMMR = append(c.onCDOTAUserMsg_PlayerMMR, fn)
-}
-
 // OnCDOTAUserMsg_AbilitySteal registers a callback for EDotaUserMessages_DOTA_UM_AbilitySteal
 func (c *Callbacks) OnCDOTAUserMsg_AbilitySteal(fn func(*dota.CDOTAUserMsg_AbilitySteal) error) {
 	c.onCDOTAUserMsg_AbilitySteal = append(c.onCDOTAUserMsg_AbilitySteal, fn)
@@ -1246,11 +1237,6 @@ func (c *Callbacks) OnCDOTAUserMsg_QuickBuyAlert(fn func(*dota.CDOTAUserMsg_Quic
 // OnCDOTAUserMsg_StatsHeroMinuteDetails registers a callback for EDotaUserMessages_DOTA_UM_StatsHeroDetails
 func (c *Callbacks) OnCDOTAUserMsg_StatsHeroMinuteDetails(fn func(*dota.CDOTAUserMsg_StatsHeroMinuteDetails) error) {
 	c.onCDOTAUserMsg_StatsHeroMinuteDetails = append(c.onCDOTAUserMsg_StatsHeroMinuteDetails, fn)
-}
-
-// OnCDOTAUserMsg_PredictionResult registers a callback for EDotaUserMessages_DOTA_UM_PredictionResult
-func (c *Callbacks) OnCDOTAUserMsg_PredictionResult(fn func(*dota.CDOTAUserMsg_PredictionResult) error) {
-	c.onCDOTAUserMsg_PredictionResult = append(c.onCDOTAUserMsg_PredictionResult, fn)
 }
 
 // OnCDOTAUserMsg_ModifierAlert registers a callback for EDotaUserMessages_DOTA_UM_ModifierAlert
@@ -1643,6 +1629,26 @@ func (c *Callbacks) OnCDOTAUserMsg_InnatePing(fn func(*dota.CDOTAUserMsg_InnateP
 	c.onCDOTAUserMsg_InnatePing = append(c.onCDOTAUserMsg_InnatePing, fn)
 }
 
+// OnCDOTAUserMsg_RoshanTimer registers a callback for EDotaUserMessages_DOTA_UM_RoshanTimer
+func (c *Callbacks) OnCDOTAUserMsg_RoshanTimer(fn func(*dota.CDOTAUserMsg_RoshanTimer) error) {
+	c.onCDOTAUserMsg_RoshanTimer = append(c.onCDOTAUserMsg_RoshanTimer, fn)
+}
+
+// OnCDOTAUserMsg_NeutralCraftAvailable registers a callback for EDotaUserMessages_DOTA_UM_NeutralCraftAvailable
+func (c *Callbacks) OnCDOTAUserMsg_NeutralCraftAvailable(fn func(*dota.CDOTAUserMsg_NeutralCraftAvailable) error) {
+	c.onCDOTAUserMsg_NeutralCraftAvailable = append(c.onCDOTAUserMsg_NeutralCraftAvailable, fn)
+}
+
+// OnCDOTAUserMsg_TimerAlert registers a callback for EDotaUserMessages_DOTA_UM_TimerAlert
+func (c *Callbacks) OnCDOTAUserMsg_TimerAlert(fn func(*dota.CDOTAUserMsg_TimerAlert) error) {
+	c.onCDOTAUserMsg_TimerAlert = append(c.onCDOTAUserMsg_TimerAlert, fn)
+}
+
+// OnCDOTAUserMsg_MadstoneAlert registers a callback for EDotaUserMessages_DOTA_UM_MadstoneAlert
+func (c *Callbacks) OnCDOTAUserMsg_MadstoneAlert(fn func(*dota.CDOTAUserMsg_MadstoneAlert) error) {
+	c.onCDOTAUserMsg_MadstoneAlert = append(c.onCDOTAUserMsg_MadstoneAlert, fn)
+}
+
 func (c *Callbacks) callByDemoType(t int32, buf []byte) error {
 	switch t {
 	case 0: // dota.EDemoCommands_DEM_Stop
@@ -1987,6 +1993,25 @@ func (c *Callbacks) callByDemoType(t int32, buf []byte) error {
 
 		return nil
 
+	case 18: // dota.EDemoCommands_DEM_Recovery
+		if c.onCDemoRecovery == nil {
+			return nil
+		}
+
+		msg := &dota.CDemoRecovery{}
+		c.pb.SetBuf(buf)
+		if err := c.pb.Unmarshal(msg); err != nil {
+			return err
+		}
+
+		for _, fn := range c.onCDemoRecovery {
+			if err := fn(msg); err != nil {
+				return err
+			}
+		}
+
+		return nil
+
 	}
 
 	if v(1) {
@@ -2010,25 +2035,6 @@ func (c *Callbacks) callByPacketType(t int32, buf []byte) error {
 		}
 
 		for _, fn := range c.onCNETMsg_NOP {
-			if err := fn(msg); err != nil {
-				return err
-			}
-		}
-
-		return nil
-
-	case 1: // dota.NET_Messages_net_Disconnect_Legacy
-		if c.onCNETMsg_Disconnect_Legacy == nil {
-			return nil
-		}
-
-		msg := &dota.CNETMsg_Disconnect_Legacy{}
-		c.pb.SetBuf(buf)
-		if err := c.pb.Unmarshal(msg); err != nil {
-			return err
-		}
-
-		for _, fn := range c.onCNETMsg_Disconnect_Legacy {
 			if err := fn(msg); err != nil {
 				return err
 			}
@@ -2751,25 +2757,6 @@ func (c *Callbacks) callByPacketType(t int32, buf []byte) error {
 		}
 
 		for _, fn := range c.onCSVCMsg_UserMessage {
-			if err := fn(msg); err != nil {
-				return err
-			}
-		}
-
-		return nil
-
-	case 73: // dota.SVC_Messages_svc_HltvReplay
-		if c.onCSVCMsg_HltvReplay == nil {
-			return nil
-		}
-
-		msg := &dota.CSVCMsg_HltvReplay{}
-		c.pb.SetBuf(buf)
-		if err := c.pb.Unmarshal(msg); err != nil {
-			return err
-		}
-
-		for _, fn := range c.onCSVCMsg_HltvReplay {
 			if err := fn(msg); err != nil {
 				return err
 			}
@@ -5095,25 +5082,6 @@ func (c *Callbacks) callByPacketType(t int32, buf []byte) error {
 
 		return nil
 
-	case 531: // dota.EDotaUserMessages_DOTA_UM_PlayerMMR
-		if c.onCDOTAUserMsg_PlayerMMR == nil {
-			return nil
-		}
-
-		msg := &dota.CDOTAUserMsg_PlayerMMR{}
-		c.pb.SetBuf(buf)
-		if err := c.pb.Unmarshal(msg); err != nil {
-			return err
-		}
-
-		for _, fn := range c.onCDOTAUserMsg_PlayerMMR {
-			if err := fn(msg); err != nil {
-				return err
-			}
-		}
-
-		return nil
-
 	case 532: // dota.EDotaUserMessages_DOTA_UM_AbilitySteal
 		if c.onCDOTAUserMsg_AbilitySteal == nil {
 			return nil
@@ -5297,25 +5265,6 @@ func (c *Callbacks) callByPacketType(t int32, buf []byte) error {
 		}
 
 		for _, fn := range c.onCDOTAUserMsg_StatsHeroMinuteDetails {
-			if err := fn(msg); err != nil {
-				return err
-			}
-		}
-
-		return nil
-
-	case 542: // dota.EDotaUserMessages_DOTA_UM_PredictionResult
-		if c.onCDOTAUserMsg_PredictionResult == nil {
-			return nil
-		}
-
-		msg := &dota.CDOTAUserMsg_PredictionResult{}
-		c.pb.SetBuf(buf)
-		if err := c.pb.Unmarshal(msg); err != nil {
-			return err
-		}
-
-		for _, fn := range c.onCDOTAUserMsg_PredictionResult {
 			if err := fn(msg); err != nil {
 				return err
 			}
@@ -6798,6 +6747,82 @@ func (c *Callbacks) callByPacketType(t int32, buf []byte) error {
 		}
 
 		for _, fn := range c.onCDOTAUserMsg_InnatePing {
+			if err := fn(msg); err != nil {
+				return err
+			}
+		}
+
+		return nil
+
+	case 626: // dota.EDotaUserMessages_DOTA_UM_RoshanTimer
+		if c.onCDOTAUserMsg_RoshanTimer == nil {
+			return nil
+		}
+
+		msg := &dota.CDOTAUserMsg_RoshanTimer{}
+		c.pb.SetBuf(buf)
+		if err := c.pb.Unmarshal(msg); err != nil {
+			return err
+		}
+
+		for _, fn := range c.onCDOTAUserMsg_RoshanTimer {
+			if err := fn(msg); err != nil {
+				return err
+			}
+		}
+
+		return nil
+
+	case 627: // dota.EDotaUserMessages_DOTA_UM_NeutralCraftAvailable
+		if c.onCDOTAUserMsg_NeutralCraftAvailable == nil {
+			return nil
+		}
+
+		msg := &dota.CDOTAUserMsg_NeutralCraftAvailable{}
+		c.pb.SetBuf(buf)
+		if err := c.pb.Unmarshal(msg); err != nil {
+			return err
+		}
+
+		for _, fn := range c.onCDOTAUserMsg_NeutralCraftAvailable {
+			if err := fn(msg); err != nil {
+				return err
+			}
+		}
+
+		return nil
+
+	case 628: // dota.EDotaUserMessages_DOTA_UM_TimerAlert
+		if c.onCDOTAUserMsg_TimerAlert == nil {
+			return nil
+		}
+
+		msg := &dota.CDOTAUserMsg_TimerAlert{}
+		c.pb.SetBuf(buf)
+		if err := c.pb.Unmarshal(msg); err != nil {
+			return err
+		}
+
+		for _, fn := range c.onCDOTAUserMsg_TimerAlert {
+			if err := fn(msg); err != nil {
+				return err
+			}
+		}
+
+		return nil
+
+	case 629: // dota.EDotaUserMessages_DOTA_UM_MadstoneAlert
+		if c.onCDOTAUserMsg_MadstoneAlert == nil {
+			return nil
+		}
+
+		msg := &dota.CDOTAUserMsg_MadstoneAlert{}
+		c.pb.SetBuf(buf)
+		if err := c.pb.Unmarshal(msg); err != nil {
+			return err
+		}
+
+		for _, fn := range c.onCDOTAUserMsg_MadstoneAlert {
 			if err := fn(msg); err != nil {
 				return err
 			}

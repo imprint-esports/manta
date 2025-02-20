@@ -36,6 +36,7 @@ update-protobufs:
 		cp -a ./dota/tmp/Protobufs/*.proto ./dota/ && \
 		rm -rf ./dota/tmp
 	rm -rf dota/gametoolevents.proto dota/dota_messages_mlbot.proto dota/dota_gcmessages_common_bot_script.proto dota/steammessages_base.proto dota/steammessages_clientserver_login.proto dota/tensorflow
+	$(SED) -i 's/\.CMsgFightingGame_GameData/CMsgFightingGame_GameData/g' dota/dota_fighting_game_p2p_messages.proto
 	$(SED) -i 's/^\(\s*\)\(optional\|repeated\|required\|extend\)\s*\./\1\2 /' dota/*.proto
 	$(SED) -i 's!^\s*rpc\s*\(\S*\)\s*(\.\([^)]*\))\s*returns\s*(\.\([^)]*\))\s*{!rpc \1 (\2) returns (\3) {!' dota/*.proto
 	$(SED) -i '1isyntax = "proto2";\n\npackage dota;\noption go_package = "github.com/imprint-esports/manta/dota;dota";\n' dota/*.proto
@@ -45,6 +46,7 @@ update-protobufs:
 	$(SED) -i 's/\.CMsgSteamLearn/CMsgSteamLearn/g' dota/*.proto
 	$(SED) -i 's/\.CMsgShowcaseItem/CMsgShowcaseItem/g' dota/*.proto
 	$(SED) -i 's/\.CMsgShowcaseBackground/CMsgShowcaseBackground/g' dota/*.proto
+	$(SED) -i 's/\.CMsgSurvivorsUserData/CMsgSurvivorsUserData/g' dota/*.proto
 	protoc -I dota --go_out=paths=source_relative:dota  dota/*.proto
 
 generate:

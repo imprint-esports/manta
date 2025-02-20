@@ -7,6 +7,7 @@ import "base_gcmessages.proto";
 import "dota_gcmessages_common_match_management.proto";
 import "dota_gcmessages_common_lobby.proto";
 import "dota_gcmessages_common_overworld.proto";
+import "dota_gcmessages_common_craftworks.proto";
 import "dota_gcmessages_common.proto";
 import "dota_shared_enums.proto";
 import "gcsdk_gcmessages.proto";
@@ -47,6 +48,7 @@ message CDOTAMatchMetadata {
 			optional uint32 level = 6;
 			repeated int32 backpack_item_id = 7;
 			optional int32 neutral_item_id = 8;
+			optional int32 neutral_enhancement_id = 9;
 		}
 
 		message AutoStyleCriteria {
@@ -57,7 +59,7 @@ message CDOTAMatchMetadata {
 		message StrangeGemProgress {
 			optional uint32 kill_eater_type = 1;
 			optional uint32 gem_item_def_index = 2;
-			optional uint32 required_hero_id = 3;
+			optional int32 required_hero_id = 3;
 			optional uint32 starting_value = 4;
 			optional uint32 ending_value = 5;
 			optional uint32 owner_item_def_index = 6;
@@ -206,6 +208,7 @@ message CDOTAMatchMetadata {
 			optional int32 game_player_id = 57;
 			repeated CMsgTrackedStat player_tracked_stats = 58;
 			optional CDOTAMatchMetadata.Team.Player.OverworldRewards overworld_rewards = 59;
+			repeated CMsgCraftworksQuestReward craftworks_quest_rewards = 60;
 		}
 
 		optional uint32 dota_team = 1;
@@ -266,7 +269,7 @@ message CDOTAMatchPrivateMetadata {
 			message CombatSegment {
 				message DamageByAbility {
 					message ByHeroTarget {
-						optional uint32 hero_id = 1;
+						optional int32 hero_id = 1;
 						optional uint32 damage = 2;
 					}
 
@@ -277,7 +280,7 @@ message CDOTAMatchPrivateMetadata {
 
 				message HealingByAbility {
 					message ByHeroTarget {
-						optional uint32 hero_id = 1;
+						optional int32 hero_id = 1;
 						optional uint32 healing = 2;
 					}
 
@@ -293,7 +296,7 @@ message CDOTAMatchPrivateMetadata {
 
 			message BuffRecord {
 				message ByHeroTarget {
-					optional uint32 hero_id = 1;
+					optional int32 hero_id = 1;
 					optional float elapsed_duration = 2;
 					optional bool is_hidden = 3;
 				}
