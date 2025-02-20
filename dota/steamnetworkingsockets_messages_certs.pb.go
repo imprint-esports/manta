@@ -451,10 +451,10 @@ var file_steamnetworkingsockets_messages_certs_proto_rawDesc = []byte{
 	0x74, 0x12, 0x36, 0x0a, 0x04, 0x63, 0x65, 0x72, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0b, 0x32,
 	0x22, 0x2e, 0x64, 0x6f, 0x74, 0x61, 0x2e, 0x43, 0x4d, 0x73, 0x67, 0x53, 0x74, 0x65, 0x61, 0x6d,
 	0x44, 0x61, 0x74, 0x61, 0x67, 0x72, 0x61, 0x6d, 0x43, 0x65, 0x72, 0x74, 0x69, 0x66, 0x69, 0x63,
-	0x61, 0x74, 0x65, 0x52, 0x04, 0x63, 0x65, 0x72, 0x74, 0x42, 0x2a, 0x48, 0x01, 0x5a, 0x23, 0x67,
-	0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x62, 0x75,
-	0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f,
-	0x74, 0x61, 0x80, 0x01, 0x00,
+	0x61, 0x74, 0x65, 0x52, 0x04, 0x63, 0x65, 0x72, 0x74, 0x42, 0x31, 0x48, 0x01, 0x5a, 0x2a, 0x67,
+	0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e,
+	0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x73, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f,
+	0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61, 0x80, 0x01, 0x00,
 }
 
 var (
@@ -471,7 +471,7 @@ func file_steamnetworkingsockets_messages_certs_proto_rawDescGZIP() []byte {
 
 var file_steamnetworkingsockets_messages_certs_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_steamnetworkingsockets_messages_certs_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
-var file_steamnetworkingsockets_messages_certs_proto_goTypes = []interface{}{
+var file_steamnetworkingsockets_messages_certs_proto_goTypes = []any{
 	(CMsgSteamDatagramCertificate_EKeyType)(0),      // 0: dota.CMsgSteamDatagramCertificate.EKeyType
 	(*CMsgSteamNetworkingIdentityLegacyBinary)(nil), // 1: dota.CMsgSteamNetworkingIdentityLegacyBinary
 	(*CMsgSteamDatagramCertificate)(nil),            // 2: dota.CMsgSteamDatagramCertificate
@@ -495,7 +495,7 @@ func file_steamnetworkingsockets_messages_certs_proto_init() {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_steamnetworkingsockets_messages_certs_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_certs_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamNetworkingIdentityLegacyBinary); i {
 			case 0:
 				return &v.state
@@ -507,7 +507,7 @@ func file_steamnetworkingsockets_messages_certs_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_certs_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_certs_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramCertificate); i {
 			case 0:
 				return &v.state
@@ -519,7 +519,7 @@ func file_steamnetworkingsockets_messages_certs_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_certs_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_certs_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramCertificateSigned); i {
 			case 0:
 				return &v.state
@@ -531,7 +531,7 @@ func file_steamnetworkingsockets_messages_certs_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_certs_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_certs_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramCertificateRequest); i {
 			case 0:
 				return &v.state

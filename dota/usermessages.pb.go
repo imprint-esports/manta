@@ -9693,7 +9693,7 @@ func file_usermessages_proto_init() {
 	}
 	file_networkbasetypes_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_usermessages_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageAchievementEvent); i {
 			case 0:
 				return &v.state
@@ -9705,7 +9705,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageCloseCaption); i {
 			case 0:
 				return &v.state
@@ -9717,7 +9717,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageCloseCaptionDirect); i {
 			case 0:
 				return &v.state
@@ -9729,7 +9729,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageCloseCaptionPlaceholder); i {
 			case 0:
 				return &v.state
@@ -9741,7 +9741,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageCurrentTimescale); i {
 			case 0:
 				return &v.state
@@ -9753,7 +9753,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageDesiredTimescale); i {
 			case 0:
 				return &v.state
@@ -9765,7 +9765,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageFade); i {
 			case 0:
 				return &v.state
@@ -9777,7 +9777,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageShake); i {
 			case 0:
 				return &v.state
@@ -9789,7 +9789,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageShakeDir); i {
 			case 0:
 				return &v.state
@@ -9801,7 +9801,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageWaterShake); i {
 			case 0:
 				return &v.state
@@ -9813,7 +9813,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageScreenTilt); i {
 			case 0:
 				return &v.state
@@ -9825,7 +9825,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageSayText); i {
 			case 0:
 				return &v.state
@@ -9837,7 +9837,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageSayText2); i {
 			case 0:
 				return &v.state
@@ -9849,7 +9849,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageHudMsg); i {
 			case 0:
 				return &v.state
@@ -9861,7 +9861,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageHudText); i {
 			case 0:
 				return &v.state
@@ -9873,7 +9873,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageTextMsg); i {
 			case 0:
 				return &v.state
@@ -9885,7 +9885,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageGameTitle); i {
 			case 0:
 				return &v.state
@@ -9897,7 +9897,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageResetHUD); i {
 			case 0:
 				return &v.state
@@ -9909,7 +9909,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageSendAudio); i {
 			case 0:
 				return &v.state
@@ -9921,7 +9921,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageAudioParameter); i {
 			case 0:
 				return &v.state
@@ -9933,7 +9933,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageVoiceMask); i {
 			case 0:
 				return &v.state
@@ -9945,7 +9945,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageRequestState); i {
 			case 0:
 				return &v.state
@@ -9957,7 +9957,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageRumble); i {
 			case 0:
 				return &v.state
@@ -9969,7 +9969,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageSayTextChannel); i {
 			case 0:
 				return &v.state
@@ -9981,7 +9981,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageColoredText); i {
 			case 0:
 				return &v.state
@@ -9993,7 +9993,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageItemPickup); i {
 			case 0:
 				return &v.state
@@ -10005,7 +10005,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageAmmoDenied); i {
 			case 0:
 				return &v.state
@@ -10017,7 +10017,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageShowMenu); i {
 			case 0:
 				return &v.state
@@ -10029,7 +10029,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageCreditsMsg); i {
 			case 0:
 				return &v.state
@@ -10041,7 +10041,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*CEntityMessagePlayJingle); i {
 			case 0:
 				return &v.state
@@ -10053,7 +10053,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*CEntityMessageScreenOverlay); i {
 			case 0:
 				return &v.state
@@ -10065,7 +10065,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[31].Exporter = func(v any, i int) any {
 			switch v := v.(*CEntityMessageRemoveAllDecals); i {
 			case 0:
 				return &v.state
@@ -10077,7 +10077,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[32].Exporter = func(v any, i int) any {
 			switch v := v.(*CEntityMessagePropagateForce); i {
 			case 0:
 				return &v.state
@@ -10089,7 +10089,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[33].Exporter = func(v any, i int) any {
 			switch v := v.(*CEntityMessageDoSpark); i {
 			case 0:
 				return &v.state
@@ -10101,7 +10101,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[34].Exporter = func(v any, i int) any {
 			switch v := v.(*CEntityMessageFixAngle); i {
 			case 0:
 				return &v.state
@@ -10113,7 +10113,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[35].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageCameraTransition); i {
 			case 0:
 				return &v.state
@@ -10125,7 +10125,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[36].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager); i {
 			case 0:
 				return &v.state
@@ -10139,7 +10139,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[37].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_HudError); i {
 			case 0:
 				return &v.state
@@ -10151,7 +10151,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[38].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_CustomGameEvent); i {
 			case 0:
 				return &v.state
@@ -10163,7 +10163,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[39].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageHapticsManagerPulse); i {
 			case 0:
 				return &v.state
@@ -10175,7 +10175,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[40].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[40].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageHapticsManagerEffect); i {
 			case 0:
 				return &v.state
@@ -10187,7 +10187,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[41].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[41].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageAnimStateGraphState); i {
 			case 0:
 				return &v.state
@@ -10199,7 +10199,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[42].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageUpdateCssClasses); i {
 			case 0:
 				return &v.state
@@ -10211,7 +10211,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[43].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[43].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageServerFrameTime); i {
 			case 0:
 				return &v.state
@@ -10223,7 +10223,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[44].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[44].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageLagCompensationError); i {
 			case 0:
 				return &v.state
@@ -10235,7 +10235,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[45].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[45].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageRequestDllStatus); i {
 			case 0:
 				return &v.state
@@ -10247,7 +10247,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[46].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[46].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageRequestUtilAction); i {
 			case 0:
 				return &v.state
@@ -10259,7 +10259,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[47].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[47].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessage_UtilMsg_Response); i {
 			case 0:
 				return &v.state
@@ -10271,7 +10271,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[48].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[48].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessage_DllStatus); i {
 			case 0:
 				return &v.state
@@ -10283,7 +10283,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[49].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[49].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageRequestInventory); i {
 			case 0:
 				return &v.state
@@ -10295,7 +10295,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[50].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[50].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessage_Inventory_Response); i {
 			case 0:
 				return &v.state
@@ -10307,7 +10307,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[51].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[51].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageRequestDiagnostic); i {
 			case 0:
 				return &v.state
@@ -10319,7 +10319,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[52].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[52].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessage_Diagnostic_Response); i {
 			case 0:
 				return &v.state
@@ -10331,7 +10331,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[53].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[53].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessage_ExtraUserData); i {
 			case 0:
 				return &v.state
@@ -10343,7 +10343,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[54].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[54].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessage_NotifyResponseFound); i {
 			case 0:
 				return &v.state
@@ -10355,7 +10355,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[55].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[55].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessage_PlayResponseConditional); i {
 			case 0:
 				return &v.state
@@ -10367,7 +10367,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[56].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[56].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMessageCameraTransition_Transition_DataDriven); i {
 			case 0:
 				return &v.state
@@ -10379,7 +10379,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[57].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[57].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_ReleaseParticleIndex); i {
 			case 0:
 				return &v.state
@@ -10391,7 +10391,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[58].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[58].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_CreateParticle); i {
 			case 0:
 				return &v.state
@@ -10403,7 +10403,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[59].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[59].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_DestroyParticle); i {
 			case 0:
 				return &v.state
@@ -10415,7 +10415,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[60].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[60].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_DestroyParticleInvolving); i {
 			case 0:
 				return &v.state
@@ -10427,7 +10427,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[61].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[61].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_DestroyParticleNamed); i {
 			case 0:
 				return &v.state
@@ -10439,7 +10439,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[62].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[62].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_UpdateParticle_OBSOLETE); i {
 			case 0:
 				return &v.state
@@ -10451,7 +10451,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[63].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[63].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_UpdateParticleFwd_OBSOLETE); i {
 			case 0:
 				return &v.state
@@ -10463,7 +10463,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[64].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[64].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_UpdateParticleOrient_OBSOLETE); i {
 			case 0:
 				return &v.state
@@ -10475,7 +10475,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[65].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[65].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_UpdateParticleTransform); i {
 			case 0:
 				return &v.state
@@ -10487,7 +10487,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[66].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[66].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_UpdateParticleFallback); i {
 			case 0:
 				return &v.state
@@ -10499,7 +10499,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[67].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[67].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_UpdateParticleOffset); i {
 			case 0:
 				return &v.state
@@ -10511,7 +10511,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[68].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[68].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_UpdateParticleEnt); i {
 			case 0:
 				return &v.state
@@ -10523,7 +10523,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[69].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[69].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_UpdateParticleSetFrozen); i {
 			case 0:
 				return &v.state
@@ -10535,7 +10535,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[70].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[70].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_UpdateParticleShouldDraw); i {
 			case 0:
 				return &v.state
@@ -10547,7 +10547,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[71].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[71].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_ChangeControlPointAttachment); i {
 			case 0:
 				return &v.state
@@ -10559,7 +10559,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[72].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[72].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_UpdateEntityPosition); i {
 			case 0:
 				return &v.state
@@ -10571,7 +10571,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[73].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[73].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_SetParticleFoWProperties); i {
 			case 0:
 				return &v.state
@@ -10583,7 +10583,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[74].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[74].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_SetParticleShouldCheckFoW); i {
 			case 0:
 				return &v.state
@@ -10595,7 +10595,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[75].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[75].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_SetControlPointModel); i {
 			case 0:
 				return &v.state
@@ -10607,7 +10607,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[76].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[76].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_SetControlPointSnapshot); i {
 			case 0:
 				return &v.state
@@ -10619,7 +10619,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[77].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[77].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_SetParticleText); i {
 			case 0:
 				return &v.state
@@ -10631,7 +10631,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[78].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[78].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_SetTextureAttribute); i {
 			case 0:
 				return &v.state
@@ -10643,7 +10643,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[79].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[79].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_SetSceneObjectGenericFlag); i {
 			case 0:
 				return &v.state
@@ -10655,7 +10655,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[80].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[80].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_SetSceneObjectTintAndDesat); i {
 			case 0:
 				return &v.state
@@ -10667,7 +10667,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[81].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[81].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_ParticleSkipToTime); i {
 			case 0:
 				return &v.state
@@ -10679,7 +10679,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[82].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[82].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_ParticleCanFreeze); i {
 			case 0:
 				return &v.state
@@ -10691,7 +10691,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[83].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[83].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_ParticleFreezeTransitionOverride); i {
 			case 0:
 				return &v.state
@@ -10703,7 +10703,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[84].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[84].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_FreezeParticleInvolving); i {
 			case 0:
 				return &v.state
@@ -10715,7 +10715,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[85].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[85].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_AddModellistOverrideElement); i {
 			case 0:
 				return &v.state
@@ -10727,7 +10727,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[86].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[86].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_ClearModellistOverride); i {
 			case 0:
 				return &v.state
@@ -10739,7 +10739,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[87].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[87].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_SetParticleNamedValueContext); i {
 			case 0:
 				return &v.state
@@ -10751,7 +10751,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[88].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[88].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_CreatePhysicsSim); i {
 			case 0:
 				return &v.state
@@ -10763,7 +10763,7 @@ func file_usermessages_proto_init() {
 				return nil
 			}
 		}
-		file_usermessages_proto_msgTypes[89].Exporter = func(v interface{}, i int) interface{} {
+		file_usermessages_proto_msgTypes[89].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserMsg_ParticleManager_DestroyPhysicsSim); i {
 			case 0:
 				return &v.state

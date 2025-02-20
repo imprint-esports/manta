@@ -2967,9 +2967,9 @@ var file_dota_gcmessages_client_candy_shop_proto_rawDesc = []byte{
 	0x6e, 0x74, 0x41, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x10, 0x02, 0x12, 0x26, 0x0a, 0x22, 0x6b, 0x5f,
 	0x65, 0x43, 0x61, 0x6e, 0x64, 0x79, 0x53, 0x68, 0x6f, 0x70, 0x52, 0x65, 0x77, 0x61, 0x72, 0x64,
 	0x54, 0x79, 0x70, 0x65, 0x5f, 0x45, 0x76, 0x65, 0x6e, 0x74, 0x50, 0x6f, 0x69, 0x6e, 0x74, 0x73,
-	0x10, 0x03, 0x42, 0x25, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d,
-	0x2f, 0x64, 0x6f, 0x74, 0x61, 0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f,
-	0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
+	0x10, 0x03, 0x42, 0x2c, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d,
+	0x2f, 0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x73,
+	0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
 }
 
 var (
@@ -2986,7 +2986,7 @@ func file_dota_gcmessages_client_candy_shop_proto_rawDescGZIP() []byte {
 
 var file_dota_gcmessages_client_candy_shop_proto_enumTypes = make([]protoimpl.EnumInfo, 9)
 var file_dota_gcmessages_client_candy_shop_proto_msgTypes = make([]protoimpl.MessageInfo, 34)
-var file_dota_gcmessages_client_candy_shop_proto_goTypes = []interface{}{
+var file_dota_gcmessages_client_candy_shop_proto_goTypes = []any{
 	(ECandyShopAuditAction)(0),                                       // 0: dota.ECandyShopAuditAction
 	(ECandyShopRewardType)(0),                                        // 1: dota.ECandyShopRewardType
 	(CMsgClientToGCCandyShopGetUserDataResponse_EResponse)(0),        // 2: dota.CMsgClientToGCCandyShopGetUserDataResponse.EResponse
@@ -3085,7 +3085,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 	file_dota_gcmessages_client_proto_init()
 	file_valveextensions_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCandyShopCandyCount); i {
 			case 0:
 				return &v.state
@@ -3097,7 +3097,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCandyShopCandyQuantity); i {
 			case 0:
 				return &v.state
@@ -3109,7 +3109,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCandyShopExchangeRecipe); i {
 			case 0:
 				return &v.state
@@ -3121,7 +3121,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCandyShopRewardData_Item); i {
 			case 0:
 				return &v.state
@@ -3133,7 +3133,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCandyShopRewardData_EventAction); i {
 			case 0:
 				return &v.state
@@ -3145,7 +3145,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCandyShopRewardData_EventPoints); i {
 			case 0:
 				return &v.state
@@ -3157,7 +3157,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCandyShopReward); i {
 			case 0:
 				return &v.state
@@ -3169,7 +3169,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCandyShopUserData); i {
 			case 0:
 				return &v.state
@@ -3181,7 +3181,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopGetUserData); i {
 			case 0:
 				return &v.state
@@ -3193,7 +3193,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopGetUserDataResponse); i {
 			case 0:
 				return &v.state
@@ -3205,7 +3205,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientCandyShopUserDataUpdated); i {
 			case 0:
 				return &v.state
@@ -3217,7 +3217,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopPurchaseReward); i {
 			case 0:
 				return &v.state
@@ -3229,7 +3229,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopPurchaseRewardResponse); i {
 			case 0:
 				return &v.state
@@ -3241,7 +3241,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopOpenBags); i {
 			case 0:
 				return &v.state
@@ -3253,7 +3253,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopOpenBagsResponse); i {
 			case 0:
 				return &v.state
@@ -3265,7 +3265,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDoExchange); i {
 			case 0:
 				return &v.state
@@ -3277,7 +3277,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDoExchangeResponse); i {
 			case 0:
 				return &v.state
@@ -3289,7 +3289,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDoVariableExchange); i {
 			case 0:
 				return &v.state
@@ -3301,7 +3301,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDoVariableExchangeResponse); i {
 			case 0:
 				return &v.state
@@ -3313,7 +3313,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopRerollRewards); i {
 			case 0:
 				return &v.state
@@ -3325,7 +3325,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopRerollRewardsResponse); i {
 			case 0:
 				return &v.state
@@ -3337,7 +3337,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CCandyShopDev); i {
 			case 0:
 				return &v.state
@@ -3349,7 +3349,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevGrantCandy); i {
 			case 0:
 				return &v.state
@@ -3361,7 +3361,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevGrantCandyResponse); i {
 			case 0:
 				return &v.state
@@ -3373,7 +3373,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevClearInventory); i {
 			case 0:
 				return &v.state
@@ -3385,7 +3385,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevClearInventoryResponse); i {
 			case 0:
 				return &v.state
@@ -3397,7 +3397,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevGrantCandyBags); i {
 			case 0:
 				return &v.state
@@ -3409,7 +3409,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevGrantCandyBagsResponse); i {
 			case 0:
 				return &v.state
@@ -3421,7 +3421,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevShuffleExchange); i {
 			case 0:
 				return &v.state
@@ -3433,7 +3433,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevShuffleExchangeResponse); i {
 			case 0:
 				return &v.state
@@ -3445,7 +3445,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevGrantRerollCharges); i {
 			case 0:
 				return &v.state
@@ -3457,7 +3457,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[31].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevGrantRerollChargesResponse); i {
 			case 0:
 				return &v.state
@@ -3469,7 +3469,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[32].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevResetShop); i {
 			case 0:
 				return &v.state
@@ -3481,7 +3481,7 @@ func file_dota_gcmessages_client_candy_shop_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_candy_shop_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_candy_shop_proto_msgTypes[33].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCandyShopDevResetShopResponse); i {
 			case 0:
 				return &v.state

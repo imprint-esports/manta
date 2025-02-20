@@ -743,9 +743,10 @@ var file_steamdatagram_messages_auth_proto_rawDesc = []byte{
 	0x69, 0x6e, 0x67, 0x53, 0x65, 0x63, 0x72, 0x65, 0x74, 0x12, 0x29, 0x0a, 0x10, 0x70, 0x72, 0x6f,
 	0x74, 0x6f, 0x63, 0x6f, 0x6c, 0x5f, 0x76, 0x65, 0x72, 0x73, 0x69, 0x6f, 0x6e, 0x18, 0x05, 0x20,
 	0x01, 0x28, 0x0d, 0x52, 0x0f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c, 0x56, 0x65, 0x72,
-	0x73, 0x69, 0x6f, 0x6e, 0x42, 0x2a, 0x48, 0x01, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62,
-	0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61,
-	0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61, 0x80, 0x01, 0x00,
+	0x73, 0x69, 0x6f, 0x6e, 0x42, 0x31, 0x48, 0x01, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62,
+	0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70,
+	0x6f, 0x72, 0x74, 0x73, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b,
+	0x64, 0x6f, 0x74, 0x61, 0x80, 0x01, 0x00,
 }
 
 var (
@@ -761,7 +762,7 @@ func file_steamdatagram_messages_auth_proto_rawDescGZIP() []byte {
 }
 
 var file_steamdatagram_messages_auth_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
-var file_steamdatagram_messages_auth_proto_goTypes = []interface{}{
+var file_steamdatagram_messages_auth_proto_goTypes = []any{
 	(*CMsgSteamDatagramRelayAuthTicket)(nil),                  // 0: dota.CMsgSteamDatagramRelayAuthTicket
 	(*CMsgSteamDatagramSignedRelayAuthTicket)(nil),            // 1: dota.CMsgSteamDatagramSignedRelayAuthTicket
 	(*CMsgSteamDatagramCachedCredentialsForApp)(nil),          // 2: dota.CMsgSteamDatagramCachedCredentialsForApp
@@ -789,7 +790,7 @@ func file_steamdatagram_messages_auth_proto_init() {
 	}
 	file_steamnetworkingsockets_messages_certs_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_steamdatagram_messages_auth_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_auth_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramRelayAuthTicket); i {
 			case 0:
 				return &v.state
@@ -801,7 +802,7 @@ func file_steamdatagram_messages_auth_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_auth_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_auth_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramSignedRelayAuthTicket); i {
 			case 0:
 				return &v.state
@@ -813,7 +814,7 @@ func file_steamdatagram_messages_auth_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_auth_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_auth_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramCachedCredentialsForApp); i {
 			case 0:
 				return &v.state
@@ -825,7 +826,7 @@ func file_steamdatagram_messages_auth_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_auth_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_auth_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramGameCoordinatorServerLogin); i {
 			case 0:
 				return &v.state
@@ -837,7 +838,7 @@ func file_steamdatagram_messages_auth_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_auth_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_auth_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramSignedGameCoordinatorServerLogin); i {
 			case 0:
 				return &v.state
@@ -849,7 +850,7 @@ func file_steamdatagram_messages_auth_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_auth_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_auth_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramHostedServerAddressPlaintext); i {
 			case 0:
 				return &v.state
@@ -861,7 +862,7 @@ func file_steamdatagram_messages_auth_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_auth_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_auth_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramRelayAuthTicket_ExtraField); i {
 			case 0:
 				return &v.state

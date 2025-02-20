@@ -5569,7 +5569,7 @@ func file_dota_gcmessages_msgid_proto_rawDescGZIP() []byte {
 }
 
 var file_dota_gcmessages_msgid_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_dota_gcmessages_msgid_proto_goTypes = []interface{}{
+var file_dota_gcmessages_msgid_proto_goTypes = []any{
 	(EDOTAGCMsg)(0), // 0: dota.EDOTAGCMsg
 }
 var file_dota_gcmessages_msgid_proto_depIdxs = []int32{

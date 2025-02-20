@@ -7484,7 +7484,7 @@ func file_dota_clientmessages_proto_init() {
 	file_dota_shared_enums_proto_init()
 	file_base_gcmessages_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_dota_clientmessages_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_MapPing); i {
 			case 0:
 				return &v.state
@@ -7496,7 +7496,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_ItemAlert); i {
 			case 0:
 				return &v.state
@@ -7508,7 +7508,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_EnemyItemAlert); i {
 			case 0:
 				return &v.state
@@ -7520,7 +7520,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_ModifierAlert); i {
 			case 0:
 				return &v.state
@@ -7532,7 +7532,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_ClickedBuff); i {
 			case 0:
 				return &v.state
@@ -7544,7 +7544,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_HPManaAlert); i {
 			case 0:
 				return &v.state
@@ -7556,7 +7556,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_NeutralCampAlert); i {
 			case 0:
 				return &v.state
@@ -7568,7 +7568,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_GlyphAlert); i {
 			case 0:
 				return &v.state
@@ -7580,7 +7580,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_RadarAlert); i {
 			case 0:
 				return &v.state
@@ -7592,7 +7592,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_MapLine); i {
 			case 0:
 				return &v.state
@@ -7604,7 +7604,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_AspectRatio); i {
 			case 0:
 				return &v.state
@@ -7616,7 +7616,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_UnitsAutoAttackMode); i {
 			case 0:
 				return &v.state
@@ -7628,7 +7628,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_UnitsAutoAttackAfterSpell); i {
 			case 0:
 				return &v.state
@@ -7640,7 +7640,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_TeleportRequiresHalt); i {
 			case 0:
 				return &v.state
@@ -7652,7 +7652,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_ChannelRequiresHalt); i {
 			case 0:
 				return &v.state
@@ -7664,7 +7664,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_SearchString); i {
 			case 0:
 				return &v.state
@@ -7676,7 +7676,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_Pause); i {
 			case 0:
 				return &v.state
@@ -7688,7 +7688,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_ShopViewMode); i {
 			case 0:
 				return &v.state
@@ -7700,7 +7700,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_SetUnitShareFlag); i {
 			case 0:
 				return &v.state
@@ -7712,7 +7712,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_SwapRequest); i {
 			case 0:
 				return &v.state
@@ -7724,7 +7724,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_SwapAccept); i {
 			case 0:
 				return &v.state
@@ -7736,7 +7736,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_WorldLine); i {
 			case 0:
 				return &v.state
@@ -7748,7 +7748,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_RequestGraphUpdate); i {
 			case 0:
 				return &v.state
@@ -7760,7 +7760,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_ChatWheel); i {
 			case 0:
 				return &v.state
@@ -7772,7 +7772,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_SendStatPopup); i {
 			case 0:
 				return &v.state
@@ -7784,7 +7784,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_DismissAllStatPopups); i {
 			case 0:
 				return &v.state
@@ -7796,7 +7796,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_BeginLastHitChallenge); i {
 			case 0:
 				return &v.state
@@ -7808,7 +7808,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_UpdateQuickBuyItem); i {
 			case 0:
 				return &v.state
@@ -7820,7 +7820,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_UpdateQuickBuy); i {
 			case 0:
 				return &v.state
@@ -7832,7 +7832,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_RecordVote); i {
 			case 0:
 				return &v.state
@@ -7844,7 +7844,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_WillPurchaseAlert); i {
 			case 0:
 				return &v.state
@@ -7856,7 +7856,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[31].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_BuyBackStateAlert); i {
 			case 0:
 				return &v.state
@@ -7868,7 +7868,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[32].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_QuickBuyAlert); i {
 			case 0:
 				return &v.state
@@ -7880,7 +7880,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[33].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_PlayerShowCase); i {
 			case 0:
 				return &v.state
@@ -7892,7 +7892,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[34].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_CameraZoomAmount); i {
 			case 0:
 				return &v.state
@@ -7904,7 +7904,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[35].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_BroadcasterUsingCameraman); i {
 			case 0:
 				return &v.state
@@ -7916,7 +7916,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[36].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_BroadcasterUsingAssistedCameraOperator); i {
 			case 0:
 				return &v.state
@@ -7928,7 +7928,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[37].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_FillEmptySlotsWithBots); i {
 			case 0:
 				return &v.state
@@ -7940,7 +7940,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[38].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_HeroStatueLike); i {
 			case 0:
 				return &v.state
@@ -7952,7 +7952,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[39].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_EventCNY2015Cmd); i {
 			case 0:
 				return &v.state
@@ -7964,7 +7964,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[40].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[40].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_DemoHero); i {
 			case 0:
 				return &v.state
@@ -7976,7 +7976,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[41].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[41].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_ChallengeSelect); i {
 			case 0:
 				return &v.state
@@ -7988,7 +7988,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[42].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_ChallengeReroll); i {
 			case 0:
 				return &v.state
@@ -8000,7 +8000,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[43].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[43].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_CoinWager); i {
 			case 0:
 				return &v.state
@@ -8012,7 +8012,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[44].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[44].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_CoinWagerToken); i {
 			case 0:
 				return &v.state
@@ -8024,7 +8024,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[45].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[45].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_RankWager); i {
 			case 0:
 				return &v.state
@@ -8036,7 +8036,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[46].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[46].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_PlayerBounty); i {
 			case 0:
 				return &v.state
@@ -8048,7 +8048,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[47].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[47].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_EventPointsTip); i {
 			case 0:
 				return &v.state
@@ -8060,7 +8060,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[48].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[48].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_ExecuteOrders); i {
 			case 0:
 				return &v.state
@@ -8072,7 +8072,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[49].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[49].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_XPAlert); i {
 			case 0:
 				return &v.state
@@ -8084,7 +8084,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[50].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[50].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_TalentTreeAlert); i {
 			case 0:
 				return &v.state
@@ -8096,7 +8096,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[51].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[51].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_KillcamDamageTaken); i {
 			case 0:
 				return &v.state
@@ -8108,7 +8108,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[52].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[52].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_KillMyHero); i {
 			case 0:
 				return &v.state
@@ -8120,7 +8120,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[53].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[53].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_QuestStatus); i {
 			case 0:
 				return &v.state
@@ -8132,7 +8132,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[54].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[54].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_ToggleAutoattack); i {
 			case 0:
 				return &v.state
@@ -8144,7 +8144,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[55].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[55].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_SpecialAbility); i {
 			case 0:
 				return &v.state
@@ -8156,7 +8156,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[56].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[56].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_SetEnemyStartingPosition); i {
 			case 0:
 				return &v.state
@@ -8168,7 +8168,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[57].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[57].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_SetDesiredWardPlacement); i {
 			case 0:
 				return &v.state
@@ -8180,7 +8180,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[58].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[58].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_RollDice); i {
 			case 0:
 				return &v.state
@@ -8192,7 +8192,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[59].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[59].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_FlipCoin); i {
 			case 0:
 				return &v.state
@@ -8204,7 +8204,7 @@ func file_dota_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_dota_clientmessages_proto_msgTypes[60].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_clientmessages_proto_msgTypes[60].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientMsg_RequestItemSuggestions); i {
 			case 0:
 				return &v.state

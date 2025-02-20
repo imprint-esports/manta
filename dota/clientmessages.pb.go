@@ -628,9 +628,10 @@ var file_clientmessages_proto_rawDesc = []byte{
 	0x45, 0x76, 0x65, 0x6e, 0x74, 0x5f, 0x44, 0x69, 0x61, 0x6c, 0x6f, 0x67, 0x46, 0x69, 0x6e, 0x69,
 	0x73, 0x68, 0x65, 0x64, 0x10, 0x01, 0x12, 0x1d, 0x0a, 0x19, 0x45, 0x43, 0x6c, 0x69, 0x65, 0x6e,
 	0x74, 0x55, 0x49, 0x45, 0x76, 0x65, 0x6e, 0x74, 0x5f, 0x46, 0x69, 0x72, 0x65, 0x4f, 0x75, 0x74,
-	0x70, 0x75, 0x74, 0x10, 0x02, 0x42, 0x25, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e,
-	0x63, 0x6f, 0x6d, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e,
-	0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
+	0x70, 0x75, 0x74, 0x10, 0x02, 0x42, 0x2c, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e,
+	0x63, 0x6f, 0x6d, 0x2f, 0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f,
+	0x72, 0x74, 0x73, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64,
+	0x6f, 0x74, 0x61,
 }
 
 var (
@@ -647,7 +648,7 @@ func file_clientmessages_proto_rawDescGZIP() []byte {
 
 var file_clientmessages_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_clientmessages_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
-var file_clientmessages_proto_goTypes = []interface{}{
+var file_clientmessages_proto_goTypes = []any{
 	(EBaseClientMessages)(0),                                 // 0: dota.EBaseClientMessages
 	(EClientUIEvent)(0),                                      // 1: dota.EClientUIEvent
 	(*CClientMsg_CustomGameEvent)(nil),                       // 2: dota.CClientMsg_CustomGameEvent
@@ -673,7 +674,7 @@ func file_clientmessages_proto_init() {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_clientmessages_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_clientmessages_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CClientMsg_CustomGameEvent); i {
 			case 0:
 				return &v.state
@@ -685,7 +686,7 @@ func file_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_clientmessages_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_clientmessages_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CClientMsg_CustomGameEventBounce); i {
 			case 0:
 				return &v.state
@@ -697,7 +698,7 @@ func file_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_clientmessages_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_clientmessages_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CClientMsg_ClientUIEvent); i {
 			case 0:
 				return &v.state
@@ -709,7 +710,7 @@ func file_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_clientmessages_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_clientmessages_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CClientMsg_DevPaletteVisibilityChangedEvent); i {
 			case 0:
 				return &v.state
@@ -721,7 +722,7 @@ func file_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_clientmessages_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_clientmessages_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CClientMsg_WorldUIControllerHasPanelChangedEvent); i {
 			case 0:
 				return &v.state
@@ -733,7 +734,7 @@ func file_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_clientmessages_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_clientmessages_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CClientMsg_RotateAnchor); i {
 			case 0:
 				return &v.state
@@ -745,7 +746,7 @@ func file_clientmessages_proto_init() {
 				return nil
 			}
 		}
-		file_clientmessages_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_clientmessages_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CClientMsg_ListenForResponseFound); i {
 			case 0:
 				return &v.state

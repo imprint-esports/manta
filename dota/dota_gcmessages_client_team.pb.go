@@ -2937,9 +2937,9 @@ var file_dota_gcmessages_client_team_proto_rawDesc = []byte{
 	0x45, 0x52, 0x5f, 0x52, 0x45, 0x53, 0x50, 0x4f, 0x4e, 0x44, 0x45, 0x44, 0x10, 0x0c, 0x12, 0x21,
 	0x0a, 0x1d, 0x54, 0x45, 0x41, 0x4d, 0x5f, 0x49, 0x4e, 0x56, 0x49, 0x54, 0x45, 0x5f, 0x45, 0x52,
 	0x52, 0x4f, 0x52, 0x5f, 0x55, 0x4e, 0x53, 0x50, 0x45, 0x43, 0x49, 0x46, 0x49, 0x45, 0x44, 0x10,
-	0x0d, 0x42, 0x25, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f,
-	0x64, 0x6f, 0x74, 0x61, 0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64,
-	0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
+	0x0d, 0x42, 0x2c, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f,
+	0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x73, 0x2f,
+	0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
 }
 
 var (
@@ -2956,7 +2956,7 @@ func file_dota_gcmessages_client_team_proto_rawDescGZIP() []byte {
 
 var file_dota_gcmessages_client_team_proto_enumTypes = make([]protoimpl.EnumInfo, 6)
 var file_dota_gcmessages_client_team_proto_msgTypes = make([]protoimpl.MessageInfo, 28)
-var file_dota_gcmessages_client_team_proto_goTypes = []interface{}{
+var file_dota_gcmessages_client_team_proto_goTypes = []any{
 	(ETeamInviteResult)(0),                                  // 0: dota.ETeamInviteResult
 	(CMsgDOTACreateTeamResponse_Result)(0),                  // 1: dota.CMsgDOTACreateTeamResponse.Result
 	(CMsgDOTAEditTeamDetailsResponse_Result)(0),             // 2: dota.CMsgDOTAEditTeamDetailsResponse.Result
@@ -3030,7 +3030,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 	}
 	file_dota_shared_enums_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_dota_gcmessages_client_team_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInfo); i {
 			case 0:
 				return &v.state
@@ -3042,7 +3042,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamsInfo); i {
 			case 0:
 				return &v.state
@@ -3054,7 +3054,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInfoList); i {
 			case 0:
 				return &v.state
@@ -3066,7 +3066,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInfoCache); i {
 			case 0:
 				return &v.state
@@ -3078,7 +3078,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTAMyTeamInfoRequest); i {
 			case 0:
 				return &v.state
@@ -3090,7 +3090,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTACreateTeam); i {
 			case 0:
 				return &v.state
@@ -3102,7 +3102,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTACreateTeamResponse); i {
 			case 0:
 				return &v.state
@@ -3114,7 +3114,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTAEditTeamDetails); i {
 			case 0:
 				return &v.state
@@ -3126,7 +3126,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTAEditTeamDetailsResponse); i {
 			case 0:
 				return &v.state
@@ -3138,7 +3138,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInvite_InviterToGC); i {
 			case 0:
 				return &v.state
@@ -3150,7 +3150,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInvite_GCImmediateResponseToInviter); i {
 			case 0:
 				return &v.state
@@ -3162,7 +3162,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInvite_GCRequestToInvitee); i {
 			case 0:
 				return &v.state
@@ -3174,7 +3174,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInvite_InviteeResponseToGC); i {
 			case 0:
 				return &v.state
@@ -3186,7 +3186,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInvite_GCResponseToInviter); i {
 			case 0:
 				return &v.state
@@ -3198,7 +3198,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInvite_GCResponseToInvitee); i {
 			case 0:
 				return &v.state
@@ -3210,7 +3210,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTAKickTeamMember); i {
 			case 0:
 				return &v.state
@@ -3222,7 +3222,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTAKickTeamMemberResponse); i {
 			case 0:
 				return &v.state
@@ -3234,7 +3234,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATransferTeamAdmin); i {
 			case 0:
 				return &v.state
@@ -3246,7 +3246,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATransferTeamAdminResponse); i {
 			case 0:
 				return &v.state
@@ -3258,7 +3258,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTALeaveTeam); i {
 			case 0:
 				return &v.state
@@ -3270,7 +3270,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTALeaveTeamResponse); i {
 			case 0:
 				return &v.state
@@ -3282,7 +3282,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTABetaParticipation); i {
 			case 0:
 				return &v.state
@@ -3294,7 +3294,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInfo_HeroStats); i {
 			case 0:
 				return &v.state
@@ -3306,7 +3306,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInfo_MemberStats); i {
 			case 0:
 				return &v.state
@@ -3318,7 +3318,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInfo_TeamStats); i {
 			case 0:
 				return &v.state
@@ -3330,7 +3330,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInfo_DPCResult); i {
 			case 0:
 				return &v.state
@@ -3342,7 +3342,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInfo_Member); i {
 			case 0:
 				return &v.state
@@ -3354,7 +3354,7 @@ func file_dota_gcmessages_client_team_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_team_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_team_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTATeamInfo_AuditEntry); i {
 			case 0:
 				return &v.state

@@ -678,7 +678,7 @@ func file_c_peer2peer_netmessages_proto_rawDescGZIP() []byte {
 
 var file_c_peer2peer_netmessages_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_c_peer2peer_netmessages_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
-var file_c_peer2peer_netmessages_proto_goTypes = []interface{}{
+var file_c_peer2peer_netmessages_proto_goTypes = []any{
 	(P2P_Messages)(0),                          // 0: dota.P2P_Messages
 	(CP2P_Voice_Handler_Flags)(0),              // 1: dota.CP2P_Voice.Handler_Flags
 	(*CP2P_TextMessage)(nil),                   // 2: dota.CP2P_TextMessage
@@ -712,7 +712,7 @@ func file_c_peer2peer_netmessages_proto_init() {
 	file_netmessages_proto_init()
 	file_networkbasetypes_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_c_peer2peer_netmessages_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_c_peer2peer_netmessages_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CP2P_TextMessage); i {
 			case 0:
 				return &v.state
@@ -724,7 +724,7 @@ func file_c_peer2peer_netmessages_proto_init() {
 				return nil
 			}
 		}
-		file_c_peer2peer_netmessages_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_c_peer2peer_netmessages_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CSteam_Voice_Encoding); i {
 			case 0:
 				return &v.state
@@ -736,7 +736,7 @@ func file_c_peer2peer_netmessages_proto_init() {
 				return nil
 			}
 		}
-		file_c_peer2peer_netmessages_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_c_peer2peer_netmessages_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CP2P_Voice); i {
 			case 0:
 				return &v.state
@@ -748,7 +748,7 @@ func file_c_peer2peer_netmessages_proto_init() {
 				return nil
 			}
 		}
-		file_c_peer2peer_netmessages_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_c_peer2peer_netmessages_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CP2P_Ping); i {
 			case 0:
 				return &v.state
@@ -760,7 +760,7 @@ func file_c_peer2peer_netmessages_proto_init() {
 				return nil
 			}
 		}
-		file_c_peer2peer_netmessages_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_c_peer2peer_netmessages_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CP2P_VRAvatarPosition); i {
 			case 0:
 				return &v.state
@@ -772,7 +772,7 @@ func file_c_peer2peer_netmessages_proto_init() {
 				return nil
 			}
 		}
-		file_c_peer2peer_netmessages_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_c_peer2peer_netmessages_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CP2P_WatchSynchronization); i {
 			case 0:
 				return &v.state
@@ -784,7 +784,7 @@ func file_c_peer2peer_netmessages_proto_init() {
 				return nil
 			}
 		}
-		file_c_peer2peer_netmessages_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_c_peer2peer_netmessages_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CP2P_VRAvatarPosition_COrientation); i {
 			case 0:
 				return &v.state

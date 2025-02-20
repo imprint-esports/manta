@@ -2056,9 +2056,10 @@ var file_steamnetworkingsockets_messages_proto_rawDesc = []byte{
 	0x12, 0x2f, 0x0a, 0x2b, 0x6b, 0x5f, 0x45, 0x53, 0x74, 0x65, 0x61, 0x6d, 0x4e, 0x65, 0x74, 0x77,
 	0x6f, 0x72, 0x6b, 0x69, 0x6e, 0x67, 0x53, 0x6f, 0x63, 0x6b, 0x65, 0x74, 0x73, 0x43, 0x69, 0x70,
 	0x68, 0x65, 0x72, 0x5f, 0x41, 0x45, 0x53, 0x5f, 0x32, 0x35, 0x36, 0x5f, 0x47, 0x43, 0x4d, 0x10,
-	0x02, 0x42, 0x2a, 0x48, 0x01, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f,
-	0x6d, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61,
-	0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61, 0x80, 0x01, 0x00,
+	0x02, 0x42, 0x31, 0x48, 0x01, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f,
+	0x6d, 0x2f, 0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f, 0x72, 0x74,
+	0x73, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74,
+	0x61, 0x80, 0x01, 0x00,
 }
 
 var (
@@ -2075,7 +2076,7 @@ func file_steamnetworkingsockets_messages_proto_rawDescGZIP() []byte {
 
 var file_steamnetworkingsockets_messages_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_steamnetworkingsockets_messages_proto_msgTypes = make([]protoimpl.MessageInfo, 16)
-var file_steamnetworkingsockets_messages_proto_goTypes = []interface{}{
+var file_steamnetworkingsockets_messages_proto_goTypes = []any{
 	(ESteamNetworkingSocketsCipher)(0),                          // 0: dota.ESteamNetworkingSocketsCipher
 	(CMsgSteamDatagramSessionCryptInfo_EKeyType)(0),             // 1: dota.CMsgSteamDatagramSessionCryptInfo.EKeyType
 	(*CMsgSteamDatagramSessionCryptInfo)(nil),                   // 2: dota.CMsgSteamDatagramSessionCryptInfo
@@ -2127,7 +2128,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 	}
 	file_steamnetworkingsockets_messages_certs_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_steamnetworkingsockets_messages_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramSessionCryptInfo); i {
 			case 0:
 				return &v.state
@@ -2139,7 +2140,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramSessionCryptInfoSigned); i {
 			case 0:
 				return &v.state
@@ -2151,7 +2152,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramDiagnostic); i {
 			case 0:
 				return &v.state
@@ -2163,7 +2164,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramLinkInstantaneousStats); i {
 			case 0:
 				return &v.state
@@ -2175,7 +2176,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramLinkLifetimeStats); i {
 			case 0:
 				return &v.state
@@ -2187,7 +2188,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramConnectionQuality); i {
 			case 0:
 				return &v.state
@@ -2199,7 +2200,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgICECandidate); i {
 			case 0:
 				return &v.state
@@ -2211,7 +2212,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgICERendezvous); i {
 			case 0:
 				return &v.state
@@ -2223,7 +2224,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamNetworkingP2PRendezvous); i {
 			case 0:
 				return &v.state
@@ -2235,7 +2236,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamNetworkingICESessionSummary); i {
 			case 0:
 				return &v.state
@@ -2247,7 +2248,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgICERendezvous_Auth); i {
 			case 0:
 				return &v.state
@@ -2259,7 +2260,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamNetworkingP2PRendezvous_ConnectRequest); i {
 			case 0:
 				return &v.state
@@ -2271,7 +2272,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamNetworkingP2PRendezvous_ConnectOK); i {
 			case 0:
 				return &v.state
@@ -2283,7 +2284,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamNetworkingP2PRendezvous_ConnectionClosed); i {
 			case 0:
 				return &v.state
@@ -2295,7 +2296,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamNetworkingP2PRendezvous_ReliableMessage); i {
 			case 0:
 				return &v.state
@@ -2307,7 +2308,7 @@ func file_steamnetworkingsockets_messages_proto_init() {
 				return nil
 			}
 		}
-		file_steamnetworkingsockets_messages_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_steamnetworkingsockets_messages_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamNetworkingP2PRendezvous_ApplicationMessage); i {
 			case 0:
 				return &v.state

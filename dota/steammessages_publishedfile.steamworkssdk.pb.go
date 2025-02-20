@@ -2350,9 +2350,10 @@ var file_steammessages_publishedfile_steamworkssdk_proto_rawDesc = []byte{
 	0x6f, 0x72, 0x20, 0x74, 0x68, 0x65, 0x20, 0x75, 0x73, 0x65, 0x72, 0x1a, 0x2b, 0x82, 0xb5, 0x18,
 	0x27, 0x41, 0x20, 0x73, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x20, 0x74, 0x6f, 0x20, 0x61, 0x63,
 	0x63, 0x65, 0x73, 0x73, 0x20, 0x70, 0x75, 0x62, 0x6c, 0x69, 0x73, 0x68, 0x65, 0x64, 0x20, 0x66,
-	0x69, 0x6c, 0x65, 0x20, 0x64, 0x61, 0x74, 0x61, 0x42, 0x25, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68,
-	0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x62, 0x75, 0x66, 0x66, 0x2f,
-	0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
+	0x69, 0x6c, 0x65, 0x20, 0x64, 0x61, 0x74, 0x61, 0x42, 0x2c, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68,
+	0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e, 0x74, 0x2d, 0x65,
+	0x73, 0x70, 0x6f, 0x72, 0x74, 0x73, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74,
+	0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
 }
 
 var (
@@ -2368,7 +2369,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_rawDescGZIP() []byte {
 }
 
 var file_steammessages_publishedfile_steamworkssdk_proto_msgTypes = make([]protoimpl.MessageInfo, 21)
-var file_steammessages_publishedfile_steamworkssdk_proto_goTypes = []interface{}{
+var file_steammessages_publishedfile_steamworkssdk_proto_goTypes = []any{
 	(*CPublishedFile_Subscribe_Request)(nil),           // 0: dota.CPublishedFile_Subscribe_Request
 	(*CPublishedFile_Subscribe_Response)(nil),          // 1: dota.CPublishedFile_Subscribe_Response
 	(*CPublishedFile_Unsubscribe_Request)(nil),         // 2: dota.CPublishedFile_Unsubscribe_Request
@@ -2428,7 +2429,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 	}
 	file_steammessages_unified_base_steamworkssdk_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_Subscribe_Request); i {
 			case 0:
 				return &v.state
@@ -2440,7 +2441,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_Subscribe_Response); i {
 			case 0:
 				return &v.state
@@ -2452,7 +2453,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_Unsubscribe_Request); i {
 			case 0:
 				return &v.state
@@ -2464,7 +2465,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_Unsubscribe_Response); i {
 			case 0:
 				return &v.state
@@ -2476,7 +2477,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_Publish_Request); i {
 			case 0:
 				return &v.state
@@ -2488,7 +2489,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_Publish_Response); i {
 			case 0:
 				return &v.state
@@ -2500,7 +2501,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_GetDetails_Request); i {
 			case 0:
 				return &v.state
@@ -2512,7 +2513,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*PublishedFileDetails); i {
 			case 0:
 				return &v.state
@@ -2524,7 +2525,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_GetDetails_Response); i {
 			case 0:
 				return &v.state
@@ -2536,7 +2537,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_GetUserFiles_Request); i {
 			case 0:
 				return &v.state
@@ -2548,7 +2549,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_GetUserFiles_Response); i {
 			case 0:
 				return &v.state
@@ -2560,7 +2561,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_Update_Request); i {
 			case 0:
 				return &v.state
@@ -2572,7 +2573,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_Update_Response); i {
 			case 0:
 				return &v.state
@@ -2584,7 +2585,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_RefreshVotingQueue_Request); i {
 			case 0:
 				return &v.state
@@ -2596,7 +2597,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_RefreshVotingQueue_Response); i {
 			case 0:
 				return &v.state
@@ -2608,7 +2609,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*PublishedFileDetails_Tag); i {
 			case 0:
 				return &v.state
@@ -2620,7 +2621,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*PublishedFileDetails_Preview); i {
 			case 0:
 				return &v.state
@@ -2632,7 +2633,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*PublishedFileDetails_Child); i {
 			case 0:
 				return &v.state
@@ -2644,7 +2645,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*PublishedFileDetails_KVTag); i {
 			case 0:
 				return &v.state
@@ -2656,7 +2657,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*PublishedFileDetails_VoteData); i {
 			case 0:
 				return &v.state
@@ -2668,7 +2669,7 @@ func file_steammessages_publishedfile_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_publishedfile_steamworkssdk_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CPublishedFile_GetUserFiles_Response_App); i {
 			case 0:
 				return &v.state

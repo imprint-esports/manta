@@ -2794,7 +2794,7 @@ func file_te_proto_rawDescGZIP() []byte {
 
 var file_te_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_te_proto_msgTypes = make([]protoimpl.MessageInfo, 28)
-var file_te_proto_goTypes = []interface{}{
+var file_te_proto_goTypes = []any{
 	(ETEProtobufIds)(0),          // 0: dota.ETEProtobufIds
 	(*CMsgTEArmorRicochet)(nil),  // 1: dota.CMsgTEArmorRicochet
 	(*CMsgTEBaseBeam)(nil),       // 2: dota.CMsgTEBaseBeam
@@ -2898,7 +2898,7 @@ func file_te_proto_init() {
 	}
 	file_networkbasetypes_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_te_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEArmorRicochet); i {
 			case 0:
 				return &v.state
@@ -2910,7 +2910,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEBaseBeam); i {
 			case 0:
 				return &v.state
@@ -2922,7 +2922,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEBeamEntPoint); i {
 			case 0:
 				return &v.state
@@ -2934,7 +2934,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEBeamEnts); i {
 			case 0:
 				return &v.state
@@ -2946,7 +2946,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEBeamPoints); i {
 			case 0:
 				return &v.state
@@ -2958,7 +2958,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEBeamRing); i {
 			case 0:
 				return &v.state
@@ -2970,7 +2970,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEBSPDecal); i {
 			case 0:
 				return &v.state
@@ -2982,7 +2982,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEBubbles); i {
 			case 0:
 				return &v.state
@@ -2994,7 +2994,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEBubbleTrail); i {
 			case 0:
 				return &v.state
@@ -3006,7 +3006,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEDecal); i {
 			case 0:
 				return &v.state
@@ -3018,7 +3018,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgEffectData); i {
 			case 0:
 				return &v.state
@@ -3030,7 +3030,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEEffectDispatch); i {
 			case 0:
 				return &v.state
@@ -3042,7 +3042,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEEnergySplash); i {
 			case 0:
 				return &v.state
@@ -3054,7 +3054,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEFizz); i {
 			case 0:
 				return &v.state
@@ -3066,7 +3066,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEShatterSurface); i {
 			case 0:
 				return &v.state
@@ -3078,7 +3078,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEGlowSprite); i {
 			case 0:
 				return &v.state
@@ -3090,7 +3090,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEImpact); i {
 			case 0:
 				return &v.state
@@ -3102,7 +3102,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEMuzzleFlash); i {
 			case 0:
 				return &v.state
@@ -3114,7 +3114,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEBloodStream); i {
 			case 0:
 				return &v.state
@@ -3126,7 +3126,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEExplosion); i {
 			case 0:
 				return &v.state
@@ -3138,7 +3138,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEDust); i {
 			case 0:
 				return &v.state
@@ -3150,7 +3150,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTELargeFunnel); i {
 			case 0:
 				return &v.state
@@ -3162,7 +3162,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTESparks); i {
 			case 0:
 				return &v.state
@@ -3174,7 +3174,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEPhysicsProp); i {
 			case 0:
 				return &v.state
@@ -3186,7 +3186,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEPlayerDecal); i {
 			case 0:
 				return &v.state
@@ -3198,7 +3198,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEProjectedDecal); i {
 			case 0:
 				return &v.state
@@ -3210,7 +3210,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTESmoke); i {
 			case 0:
 				return &v.state
@@ -3222,7 +3222,7 @@ func file_te_proto_init() {
 				return nil
 			}
 		}
-		file_te_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_te_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTEWorldDecal); i {
 			case 0:
 				return &v.state

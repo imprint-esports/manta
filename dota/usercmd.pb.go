@@ -495,7 +495,7 @@ func file_usercmd_proto_rawDescGZIP() []byte {
 }
 
 var file_usercmd_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
-var file_usercmd_proto_goTypes = []interface{}{
+var file_usercmd_proto_goTypes = []any{
 	(*CInButtonStatePB)(nil), // 0: dota.CInButtonStatePB
 	(*CSubtickMoveStep)(nil), // 1: dota.CSubtickMoveStep
 	(*CBaseUserCmdPB)(nil),   // 2: dota.CBaseUserCmdPB
@@ -521,7 +521,7 @@ func file_usercmd_proto_init() {
 	}
 	file_networkbasetypes_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_usercmd_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_usercmd_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CInButtonStatePB); i {
 			case 0:
 				return &v.state
@@ -533,7 +533,7 @@ func file_usercmd_proto_init() {
 				return nil
 			}
 		}
-		file_usercmd_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_usercmd_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CSubtickMoveStep); i {
 			case 0:
 				return &v.state
@@ -545,7 +545,7 @@ func file_usercmd_proto_init() {
 				return nil
 			}
 		}
-		file_usercmd_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_usercmd_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CBaseUserCmdPB); i {
 			case 0:
 				return &v.state
@@ -557,7 +557,7 @@ func file_usercmd_proto_init() {
 				return nil
 			}
 		}
-		file_usercmd_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_usercmd_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CUserCmdBasePB); i {
 			case 0:
 				return &v.state

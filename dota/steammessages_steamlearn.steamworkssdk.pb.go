@@ -4657,7 +4657,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 	}
 	file_steammessages_unified_base_steamworkssdk_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnDataSourceDescObject); i {
 			case 0:
 				return &v.state
@@ -4669,7 +4669,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnDataSourceDescElement); i {
 			case 0:
 				return &v.state
@@ -4681,7 +4681,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnDataSource); i {
 			case 0:
 				return &v.state
@@ -4693,7 +4693,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnDataObject); i {
 			case 0:
 				return &v.state
@@ -4705,7 +4705,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnDataElement); i {
 			case 0:
 				return &v.state
@@ -4717,7 +4717,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnData); i {
 			case 0:
 				return &v.state
@@ -4729,7 +4729,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnDataList); i {
 			case 0:
 				return &v.state
@@ -4741,7 +4741,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_RegisterDataSource_Request); i {
 			case 0:
 				return &v.state
@@ -4753,7 +4753,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_RegisterDataSource_Response); i {
 			case 0:
 				return &v.state
@@ -4765,7 +4765,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_CacheData_Request); i {
 			case 0:
 				return &v.state
@@ -4777,7 +4777,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_CacheData_Response); i {
 			case 0:
 				return &v.state
@@ -4789,7 +4789,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_SnapshotProject_Request); i {
 			case 0:
 				return &v.state
@@ -4801,7 +4801,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_SnapshotProject_Response); i {
 			case 0:
 				return &v.state
@@ -4813,7 +4813,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_BatchOperation_Request); i {
 			case 0:
 				return &v.state
@@ -4825,7 +4825,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_BatchOperation_Response); i {
 			case 0:
 				return &v.state
@@ -4837,7 +4837,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnAccessTokens); i {
 			case 0:
 				return &v.state
@@ -4849,7 +4849,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_GetAccessTokens_Request); i {
 			case 0:
 				return &v.state
@@ -4861,7 +4861,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_GetAccessTokens_Response); i {
 			case 0:
 				return &v.state
@@ -4873,7 +4873,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_Inference_Request); i {
 			case 0:
 				return &v.state
@@ -4885,7 +4885,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_InferenceMetadata_Request); i {
 			case 0:
 				return &v.state
@@ -4897,7 +4897,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_InferenceMetadataBackend_Request); i {
 			case 0:
 				return &v.state
@@ -4909,7 +4909,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_InferenceMetadata_Response); i {
 			case 0:
 				return &v.state
@@ -4921,7 +4921,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_InferenceBackend_Response); i {
 			case 0:
 				return &v.state
@@ -4933,7 +4933,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_Inference_Response); i {
 			case 0:
 				return &v.state
@@ -4945,7 +4945,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnAccessTokens_CacheDataAccessToken); i {
 			case 0:
 				return &v.state
@@ -4957,7 +4957,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnAccessTokens_SnapshotProjectAccessToken); i {
 			case 0:
 				return &v.state
@@ -4969,7 +4969,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearnAccessTokens_InferenceAccessToken); i {
 			case 0:
 				return &v.state
@@ -4981,7 +4981,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_InferenceMetadata_Response_RowRange); i {
 			case 0:
 				return &v.state
@@ -4993,7 +4993,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_InferenceMetadata_Response_Range); i {
 			case 0:
 				return &v.state
@@ -5005,7 +5005,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_InferenceMetadata_Response_StdDev); i {
 			case 0:
 				return &v.state
@@ -5017,7 +5017,7 @@ func file_steammessages_steamlearn_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_steamlearn_steamworkssdk_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamLearn_InferenceMetadata_Response_CompactTable); i {
 			case 0:
 				return &v.state

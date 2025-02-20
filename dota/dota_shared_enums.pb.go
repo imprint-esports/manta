@@ -7078,7 +7078,7 @@ func file_dota_shared_enums_proto_rawDescGZIP() []byte {
 
 var file_dota_shared_enums_proto_enumTypes = make([]protoimpl.EnumInfo, 54)
 var file_dota_shared_enums_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
-var file_dota_shared_enums_proto_goTypes = []interface{}{
+var file_dota_shared_enums_proto_goTypes = []any{
 	(DOTA_GameMode)(0),                                 // 0: dota.DOTA_GameMode
 	(DOTA_GameState)(0),                                // 1: dota.DOTA_GameState
 	(DOTA_GC_TEAM)(0),                                  // 2: dota.DOTA_GC_TEAM
@@ -7162,7 +7162,7 @@ func file_dota_shared_enums_proto_init() {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_dota_shared_enums_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_shared_enums_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAClientHardwareSpecs); i {
 			case 0:
 				return &v.state
@@ -7174,7 +7174,7 @@ func file_dota_shared_enums_proto_init() {
 				return nil
 			}
 		}
-		file_dota_shared_enums_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_shared_enums_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTASaveGame); i {
 			case 0:
 				return &v.state
@@ -7186,7 +7186,7 @@ func file_dota_shared_enums_proto_init() {
 				return nil
 			}
 		}
-		file_dota_shared_enums_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_shared_enums_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTACombatLogEntry); i {
 			case 0:
 				return &v.state
@@ -7198,7 +7198,7 @@ func file_dota_shared_enums_proto_init() {
 				return nil
 			}
 		}
-		file_dota_shared_enums_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_shared_enums_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPendingEventAward); i {
 			case 0:
 				return &v.state
@@ -7210,7 +7210,7 @@ func file_dota_shared_enums_proto_init() {
 				return nil
 			}
 		}
-		file_dota_shared_enums_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_shared_enums_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTASaveGame_Player); i {
 			case 0:
 				return &v.state
@@ -7222,7 +7222,7 @@ func file_dota_shared_enums_proto_init() {
 				return nil
 			}
 		}
-		file_dota_shared_enums_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_shared_enums_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTASaveGame_SaveInstance); i {
 			case 0:
 				return &v.state
@@ -7234,7 +7234,7 @@ func file_dota_shared_enums_proto_init() {
 				return nil
 			}
 		}
-		file_dota_shared_enums_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_shared_enums_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTASaveGame_SaveInstance_PlayerPositions); i {
 			case 0:
 				return &v.state

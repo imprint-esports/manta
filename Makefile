@@ -15,7 +15,7 @@ bench:
 	go test -run=XXX -bench=BenchmarkMatch -benchtime=1m -v
 
 cover:
-	go test -cover -coverpkg github.com/dotabuff/manta,github.com/dotabuff/manta/vbkv -coverprofile /tmp/manta.cov -v
+	go test -cover -coverpkg github.com/imprint-esports/manta,github.com/imprint-esports/manta/vbkv -coverprofile /tmp/manta.cov -v
 	go tool cover -html=/tmp/manta.cov
 
 cpuprofile:
@@ -39,7 +39,7 @@ update-protobufs:
 	$(SED) -i 's/\.CMsgFightingGame_GameData/CMsgFightingGame_GameData/g' dota/dota_fighting_game_p2p_messages.proto
 	$(SED) -i 's/^\(\s*\)\(optional\|repeated\|required\|extend\)\s*\./\1\2 /' dota/*.proto
 	$(SED) -i 's!^\s*rpc\s*\(\S*\)\s*(\.\([^)]*\))\s*returns\s*(\.\([^)]*\))\s*{!rpc \1 (\2) returns (\3) {!' dota/*.proto
-	$(SED) -i '1isyntax = "proto2";\n\npackage dota;\noption go_package = "github.com/dotabuff/manta/dota;dota";\n' dota/*.proto
+	$(SED) -i '1isyntax = "proto2";\n\npackage dota;\noption go_package = "github.com/imprint-esports/manta/dota;dota";\n' dota/*.proto
 	$(SED) -i '/^import "google\/protobuf\/valve_extensions\.proto"/d' dota/*.proto
 	$(SED) -i '/^option (/d' dota/*.proto
 	$(SED) -i 's/\s\[.*\]//g' dota/*.proto

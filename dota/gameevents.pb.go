@@ -1356,10 +1356,10 @@ var file_gameevents_proto_rawDesc = []byte{
 	0x47, 0x45, 0x5f, 0x53, 0x6f, 0x73, 0x53, 0x65, 0x74, 0x4c, 0x69, 0x62, 0x72, 0x61, 0x72, 0x79,
 	0x53, 0x74, 0x61, 0x63, 0x6b, 0x46, 0x69, 0x65, 0x6c, 0x64, 0x73, 0x10, 0xd3, 0x01, 0x12, 0x1d,
 	0x0a, 0x18, 0x47, 0x45, 0x5f, 0x53, 0x6f, 0x73, 0x53, 0x74, 0x6f, 0x70, 0x53, 0x6f, 0x75, 0x6e,
-	0x64, 0x45, 0x76, 0x65, 0x6e, 0x74, 0x48, 0x61, 0x73, 0x68, 0x10, 0xd4, 0x01, 0x42, 0x25, 0x5a,
-	0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x64, 0x6f, 0x74, 0x61,
-	0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b,
-	0x64, 0x6f, 0x74, 0x61,
+	0x64, 0x45, 0x76, 0x65, 0x6e, 0x74, 0x48, 0x61, 0x73, 0x68, 0x10, 0xd4, 0x01, 0x42, 0x2c, 0x5a,
+	0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x69, 0x6d, 0x70, 0x72,
+	0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x73, 0x2f, 0x6d, 0x61, 0x6e, 0x74,
+	0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
 }
 
 var (
@@ -1376,7 +1376,7 @@ func file_gameevents_proto_rawDescGZIP() []byte {
 
 var file_gameevents_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_gameevents_proto_msgTypes = make([]protoimpl.MessageInfo, 16)
-var file_gameevents_proto_goTypes = []interface{}{
+var file_gameevents_proto_goTypes = []any{
 	(EBaseGameEvents)(0),                              // 0: dota.EBaseGameEvents
 	(*CMsgVDebugGameSessionIDEvent)(nil),              // 1: dota.CMsgVDebugGameSessionIDEvent
 	(*CMsgPlaceDecalEvent)(nil),                       // 2: dota.CMsgPlaceDecalEvent
@@ -1417,7 +1417,7 @@ func file_gameevents_proto_init() {
 	}
 	file_networkbasetypes_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_gameevents_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgVDebugGameSessionIDEvent); i {
 			case 0:
 				return &v.state
@@ -1429,7 +1429,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPlaceDecalEvent); i {
 			case 0:
 				return &v.state
@@ -1441,7 +1441,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClearWorldDecalsEvent); i {
 			case 0:
 				return &v.state
@@ -1453,7 +1453,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClearEntityDecalsEvent); i {
 			case 0:
 				return &v.state
@@ -1465,7 +1465,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClearDecalsForSkeletonInstanceEvent); i {
 			case 0:
 				return &v.state
@@ -1477,7 +1477,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSource1LegacyGameEventList); i {
 			case 0:
 				return &v.state
@@ -1489,7 +1489,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSource1LegacyListenEvents); i {
 			case 0:
 				return &v.state
@@ -1501,7 +1501,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSource1LegacyGameEvent); i {
 			case 0:
 				return &v.state
@@ -1513,7 +1513,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSosStartSoundEvent); i {
 			case 0:
 				return &v.state
@@ -1525,7 +1525,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSosStopSoundEvent); i {
 			case 0:
 				return &v.state
@@ -1537,7 +1537,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSosStopSoundEventHash); i {
 			case 0:
 				return &v.state
@@ -1549,7 +1549,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSosSetSoundEventParams); i {
 			case 0:
 				return &v.state
@@ -1561,7 +1561,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSosSetLibraryStackFields); i {
 			case 0:
 				return &v.state
@@ -1573,7 +1573,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSource1LegacyGameEventListKeyT); i {
 			case 0:
 				return &v.state
@@ -1585,7 +1585,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSource1LegacyGameEventListDescriptorT); i {
 			case 0:
 				return &v.state
@@ -1597,7 +1597,7 @@ func file_gameevents_proto_init() {
 				return nil
 			}
 		}
-		file_gameevents_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_gameevents_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSource1LegacyGameEventKeyT); i {
 			case 0:
 				return &v.state

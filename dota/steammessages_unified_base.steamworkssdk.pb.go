@@ -7,9 +7,9 @@
 package dota
 
 import (
+	descriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	descriptorpb "google.golang.org/protobuf/types/descriptorpb"
 	reflect "reflect"
 	sync "sync"
 )
@@ -79,7 +79,7 @@ func (EProtoExecutionSite) EnumDescriptor() ([]byte, []int) {
 
 var file_steammessages_unified_base_steamworkssdk_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
-		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
+		ExtendedType:  (*descriptor.FieldOptions)(nil),
 		ExtensionType: (*string)(nil),
 		Field:         50000,
 		Name:          "dota.description",
@@ -87,7 +87,7 @@ var file_steammessages_unified_base_steamworkssdk_proto_extTypes = []protoimpl.E
 		Filename:      "steammessages_unified_base.steamworkssdk.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.ServiceOptions)(nil),
+		ExtendedType:  (*descriptor.ServiceOptions)(nil),
 		ExtensionType: (*string)(nil),
 		Field:         50000,
 		Name:          "dota.service_description",
@@ -95,7 +95,7 @@ var file_steammessages_unified_base_steamworkssdk_proto_extTypes = []protoimpl.E
 		Filename:      "steammessages_unified_base.steamworkssdk.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.ServiceOptions)(nil),
+		ExtendedType:  (*descriptor.ServiceOptions)(nil),
 		ExtensionType: (*EProtoExecutionSite)(nil),
 		Field:         50008,
 		Name:          "dota.service_execution_site",
@@ -103,7 +103,7 @@ var file_steammessages_unified_base_steamworkssdk_proto_extTypes = []protoimpl.E
 		Filename:      "steammessages_unified_base.steamworkssdk.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.MethodOptions)(nil),
+		ExtendedType:  (*descriptor.MethodOptions)(nil),
 		ExtensionType: (*string)(nil),
 		Field:         50000,
 		Name:          "dota.method_description",
@@ -111,7 +111,7 @@ var file_steammessages_unified_base_steamworkssdk_proto_extTypes = []protoimpl.E
 		Filename:      "steammessages_unified_base.steamworkssdk.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.EnumOptions)(nil),
+		ExtendedType:  (*descriptor.EnumOptions)(nil),
 		ExtensionType: (*string)(nil),
 		Field:         50000,
 		Name:          "dota.enum_description",
@@ -119,7 +119,7 @@ var file_steammessages_unified_base_steamworkssdk_proto_extTypes = []protoimpl.E
 		Filename:      "steammessages_unified_base.steamworkssdk.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.EnumValueOptions)(nil),
+		ExtendedType:  (*descriptor.EnumValueOptions)(nil),
 		ExtensionType: (*string)(nil),
 		Field:         50000,
 		Name:          "dota.enum_value_description",
@@ -128,13 +128,13 @@ var file_steammessages_unified_base_steamworkssdk_proto_extTypes = []protoimpl.E
 	},
 }
 
-// Extension fields to descriptorpb.FieldOptions.
+// Extension fields to descriptor.FieldOptions.
 var (
 	// optional string description = 50000;
 	E_Description = &file_steammessages_unified_base_steamworkssdk_proto_extTypes[0]
 )
 
-// Extension fields to descriptorpb.ServiceOptions.
+// Extension fields to descriptor.ServiceOptions.
 var (
 	// optional string service_description = 50000;
 	E_ServiceDescription = &file_steammessages_unified_base_steamworkssdk_proto_extTypes[1]
@@ -142,19 +142,19 @@ var (
 	E_ServiceExecutionSite = &file_steammessages_unified_base_steamworkssdk_proto_extTypes[2]
 )
 
-// Extension fields to descriptorpb.MethodOptions.
+// Extension fields to descriptor.MethodOptions.
 var (
 	// optional string method_description = 50000;
 	E_MethodDescription = &file_steammessages_unified_base_steamworkssdk_proto_extTypes[3]
 )
 
-// Extension fields to descriptorpb.EnumOptions.
+// Extension fields to descriptor.EnumOptions.
 var (
 	// optional string enum_description = 50000;
 	E_EnumDescription = &file_steammessages_unified_base_steamworkssdk_proto_extTypes[4]
 )
 
-// Extension fields to descriptorpb.EnumValueOptions.
+// Extension fields to descriptor.EnumValueOptions.
 var (
 	// optional string enum_value_description = 50000;
 	E_EnumValueDescription = &file_steammessages_unified_base_steamworkssdk_proto_extTypes[5]
@@ -206,10 +206,10 @@ var file_steammessages_unified_base_steamworkssdk_proto_rawDesc = []byte{
 	0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x75, 0x66, 0x2e, 0x45, 0x6e, 0x75, 0x6d, 0x56,
 	0x61, 0x6c, 0x75, 0x65, 0x4f, 0x70, 0x74, 0x69, 0x6f, 0x6e, 0x73, 0x18, 0xd0, 0x86, 0x03, 0x20,
 	0x01, 0x28, 0x09, 0x52, 0x14, 0x65, 0x6e, 0x75, 0x6d, 0x56, 0x61, 0x6c, 0x75, 0x65, 0x44, 0x65,
-	0x73, 0x63, 0x72, 0x69, 0x70, 0x74, 0x69, 0x6f, 0x6e, 0x42, 0x2a, 0x48, 0x01, 0x5a, 0x23, 0x67,
-	0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x62, 0x75,
-	0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f,
-	0x74, 0x61, 0x80, 0x01, 0x00,
+	0x73, 0x63, 0x72, 0x69, 0x70, 0x74, 0x69, 0x6f, 0x6e, 0x42, 0x31, 0x48, 0x01, 0x5a, 0x2a, 0x67,
+	0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e,
+	0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x73, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f,
+	0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61, 0x80, 0x01, 0x00,
 }
 
 var (
@@ -225,13 +225,13 @@ func file_steammessages_unified_base_steamworkssdk_proto_rawDescGZIP() []byte {
 }
 
 var file_steammessages_unified_base_steamworkssdk_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_steammessages_unified_base_steamworkssdk_proto_goTypes = []interface{}{
-	(EProtoExecutionSite)(0),              // 0: dota.EProtoExecutionSite
-	(*descriptorpb.FieldOptions)(nil),     // 1: google.protobuf.FieldOptions
-	(*descriptorpb.ServiceOptions)(nil),   // 2: google.protobuf.ServiceOptions
-	(*descriptorpb.MethodOptions)(nil),    // 3: google.protobuf.MethodOptions
-	(*descriptorpb.EnumOptions)(nil),      // 4: google.protobuf.EnumOptions
-	(*descriptorpb.EnumValueOptions)(nil), // 5: google.protobuf.EnumValueOptions
+var file_steammessages_unified_base_steamworkssdk_proto_goTypes = []any{
+	(EProtoExecutionSite)(0),            // 0: dota.EProtoExecutionSite
+	(*descriptor.FieldOptions)(nil),     // 1: google.protobuf.FieldOptions
+	(*descriptor.ServiceOptions)(nil),   // 2: google.protobuf.ServiceOptions
+	(*descriptor.MethodOptions)(nil),    // 3: google.protobuf.MethodOptions
+	(*descriptor.EnumOptions)(nil),      // 4: google.protobuf.EnumOptions
+	(*descriptor.EnumValueOptions)(nil), // 5: google.protobuf.EnumValueOptions
 }
 var file_steammessages_unified_base_steamworkssdk_proto_depIdxs = []int32{
 	1, // 0: dota.description:extendee -> google.protobuf.FieldOptions

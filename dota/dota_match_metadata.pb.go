@@ -4135,7 +4135,7 @@ func file_dota_match_metadata_proto_rawDescGZIP() []byte {
 }
 
 var file_dota_match_metadata_proto_msgTypes = make([]protoimpl.MessageInfo, 37)
-var file_dota_match_metadata_proto_goTypes = []interface{}{
+var file_dota_match_metadata_proto_goTypes = []any{
 	(*CDOTAMatchMetadataFile)(nil),                                                            // 0: dota.CDOTAMatchMetadataFile
 	(*CDOTAMatchMetadata)(nil),                                                                // 1: dota.CDOTAMatchMetadata
 	(*CDOTAMatchPrivateMetadata)(nil),                                                         // 2: dota.CDOTAMatchPrivateMetadata
@@ -4257,7 +4257,7 @@ func file_dota_match_metadata_proto_init() {
 	file_dota_shared_enums_proto_init()
 	file_gcsdk_gcmessages_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_dota_match_metadata_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadataFile); i {
 			case 0:
 				return &v.state
@@ -4269,7 +4269,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata); i {
 			case 0:
 				return &v.state
@@ -4281,7 +4281,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata); i {
 			case 0:
 				return &v.state
@@ -4293,7 +4293,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_EconItem); i {
 			case 0:
 				return &v.state
@@ -4305,7 +4305,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team); i {
 			case 0:
 				return &v.state
@@ -4317,7 +4317,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_GuildChallengeProgress); i {
 			case 0:
 				return &v.state
@@ -4329,7 +4329,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Tip); i {
 			case 0:
 				return &v.state
@@ -4341,7 +4341,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_PlayerKill); i {
 			case 0:
 				return &v.state
@@ -4353,7 +4353,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_ItemPurchase); i {
 			case 0:
 				return &v.state
@@ -4365,7 +4365,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_InventorySnapshot); i {
 			case 0:
 				return &v.state
@@ -4377,7 +4377,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_AutoStyleCriteria); i {
 			case 0:
 				return &v.state
@@ -4389,7 +4389,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_StrangeGemProgress); i {
 			case 0:
 				return &v.state
@@ -4401,7 +4401,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_VictoryPrediction); i {
 			case 0:
 				return &v.state
@@ -4413,7 +4413,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_SubChallenge); i {
 			case 0:
 				return &v.state
@@ -4425,7 +4425,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_CavernChallengeResult); i {
 			case 0:
 				return &v.state
@@ -4437,7 +4437,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_ActionGrant); i {
 			case 0:
 				return &v.state
@@ -4449,7 +4449,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_CandyGrant); i {
 			case 0:
 				return &v.state
@@ -4461,7 +4461,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_PeriodicResourceData); i {
 			case 0:
 				return &v.state
@@ -4473,7 +4473,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_EventData); i {
 			case 0:
 				return &v.state
@@ -4485,7 +4485,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_FeaturedGamemodeProgress); i {
 			case 0:
 				return &v.state
@@ -4497,7 +4497,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_Player); i {
 			case 0:
 				return &v.state
@@ -4509,7 +4509,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_Player_ContractProgress); i {
 			case 0:
 				return &v.state
@@ -4521,7 +4521,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_Team_Player_OverworldRewards); i {
 			case 0:
 				return &v.state
@@ -4533,7 +4533,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchMetadata_GuildChallengeProgress_IndividualProgress); i {
 			case 0:
 				return &v.state
@@ -4545,7 +4545,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_StringName); i {
 			case 0:
 				return &v.state
@@ -4557,7 +4557,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team); i {
 			case 0:
 				return &v.state
@@ -4569,7 +4569,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Player); i {
 			case 0:
 				return &v.state
@@ -4581,7 +4581,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Building); i {
 			case 0:
 				return &v.state
@@ -4593,7 +4593,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Player_CombatSegment); i {
 			case 0:
 				return &v.state
@@ -4605,7 +4605,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Player_BuffRecord); i {
 			case 0:
 				return &v.state
@@ -4617,7 +4617,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Player_GoldReceived); i {
 			case 0:
 				return &v.state
@@ -4629,7 +4629,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[31].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Player_XPReceived); i {
 			case 0:
 				return &v.state
@@ -4641,7 +4641,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[32].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Player_CombatSegment_DamageByAbility); i {
 			case 0:
 				return &v.state
@@ -4653,7 +4653,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[33].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Player_CombatSegment_HealingByAbility); i {
 			case 0:
 				return &v.state
@@ -4665,7 +4665,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[34].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Player_CombatSegment_DamageByAbility_ByHeroTarget); i {
 			case 0:
 				return &v.state
@@ -4677,7 +4677,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[35].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Player_CombatSegment_HealingByAbility_ByHeroTarget); i {
 			case 0:
 				return &v.state
@@ -4689,7 +4689,7 @@ func file_dota_match_metadata_proto_init() {
 				return nil
 			}
 		}
-		file_dota_match_metadata_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_match_metadata_proto_msgTypes[36].Exporter = func(v any, i int) any {
 			switch v := v.(*CDOTAMatchPrivateMetadata_Team_Player_BuffRecord_ByHeroTarget); i {
 			case 0:
 				return &v.state

@@ -4835,7 +4835,7 @@ func file_base_gcmessages_proto_init() {
 	file_gcsdk_gcmessages_proto_init()
 	file_steammessages_steamlearn_steamworkssdk_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_base_gcmessages_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CGCStorePurchaseInit_LineItem); i {
 			case 0:
 				return &v.state
@@ -4847,7 +4847,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCStorePurchaseInit); i {
 			case 0:
 				return &v.state
@@ -4859,7 +4859,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCStorePurchaseInitResponse); i {
 			case 0:
 				return &v.state
@@ -4871,7 +4871,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientPingData); i {
 			case 0:
 				return &v.state
@@ -4883,7 +4883,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgInviteToParty); i {
 			case 0:
 				return &v.state
@@ -4895,7 +4895,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgInviteToLobby); i {
 			case 0:
 				return &v.state
@@ -4907,7 +4907,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgInvitationCreated); i {
 			case 0:
 				return &v.state
@@ -4919,7 +4919,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPartyInviteResponse); i {
 			case 0:
 				return &v.state
@@ -4931,7 +4931,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgLobbyInviteResponse); i {
 			case 0:
 				return &v.state
@@ -4943,7 +4943,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgKickFromParty); i {
 			case 0:
 				return &v.state
@@ -4955,7 +4955,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgLeaveParty); i {
 			case 0:
 				return &v.state
@@ -4967,7 +4967,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCustomGameInstallStatus); i {
 			case 0:
 				return &v.state
@@ -4979,7 +4979,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgServerAvailable); i {
 			case 0:
 				return &v.state
@@ -4991,7 +4991,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgLANServerAvailable); i {
 			case 0:
 				return &v.state
@@ -5003,7 +5003,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CSOEconGameAccountClient); i {
 			case 0:
 				return &v.state
@@ -5015,7 +5015,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgApplyStrangePart); i {
 			case 0:
 				return &v.state
@@ -5027,7 +5027,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgApplyPennantUpgrade); i {
 			case 0:
 				return &v.state
@@ -5039,7 +5039,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgApplyEggEssence); i {
 			case 0:
 				return &v.state
@@ -5051,7 +5051,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CSOEconItemAttribute); i {
 			case 0:
 				return &v.state
@@ -5063,7 +5063,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CSOEconItemEquipped); i {
 			case 0:
 				return &v.state
@@ -5075,7 +5075,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CSOEconItem); i {
 			case 0:
 				return &v.state
@@ -5087,7 +5087,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSortItems); i {
 			case 0:
 				return &v.state
@@ -5099,7 +5099,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgItemAcknowledged); i {
 			case 0:
 				return &v.state
@@ -5111,7 +5111,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSetItemPositions); i {
 			case 0:
 				return &v.state
@@ -5123,7 +5123,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCStorePurchaseCancel); i {
 			case 0:
 				return &v.state
@@ -5135,7 +5135,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCStorePurchaseCancelResponse); i {
 			case 0:
 				return &v.state
@@ -5147,7 +5147,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCStorePurchaseFinalize); i {
 			case 0:
 				return &v.state
@@ -5159,7 +5159,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCStorePurchaseFinalizeResponse); i {
 			case 0:
 				return &v.state
@@ -5171,7 +5171,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCBannedWordListUpdated); i {
 			case 0:
 				return &v.state
@@ -5183,7 +5183,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCDirtySDOCache); i {
 			case 0:
 				return &v.state
@@ -5195,7 +5195,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSDONoMemcached); i {
 			case 0:
 				return &v.state
@@ -5207,7 +5207,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[31].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCUpdateSQLKeyValue); i {
 			case 0:
 				return &v.state
@@ -5219,7 +5219,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[32].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCServerVersionUpdated); i {
 			case 0:
 				return &v.state
@@ -5231,7 +5231,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[33].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCClientVersionUpdated); i {
 			case 0:
 				return &v.state
@@ -5243,7 +5243,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[34].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCWebAPIAccountChanged); i {
 			case 0:
 				return &v.state
@@ -5255,7 +5255,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[35].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgExtractGems); i {
 			case 0:
 				return &v.state
@@ -5267,7 +5267,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[36].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgExtractGemsResponse); i {
 			case 0:
 				return &v.state
@@ -5279,7 +5279,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[37].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAddSocket); i {
 			case 0:
 				return &v.state
@@ -5291,7 +5291,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[38].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAddSocketResponse); i {
 			case 0:
 				return &v.state
@@ -5303,7 +5303,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[39].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAddItemToSocketData); i {
 			case 0:
 				return &v.state
@@ -5315,7 +5315,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[40].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[40].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAddItemToSocket); i {
 			case 0:
 				return &v.state
@@ -5327,7 +5327,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[41].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[41].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAddItemToSocketResponse); i {
 			case 0:
 				return &v.state
@@ -5339,7 +5339,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[42].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgResetStrangeGemCount); i {
 			case 0:
 				return &v.state
@@ -5351,7 +5351,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[43].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[43].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgResetStrangeGemCountResponse); i {
 			case 0:
 				return &v.state
@@ -5363,7 +5363,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[44].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[44].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientPollFileRequest); i {
 			case 0:
 				return &v.state
@@ -5375,7 +5375,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[45].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[45].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientPollFileResponse); i {
 			case 0:
 				return &v.state
@@ -5387,7 +5387,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[46].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[46].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCPerformManualOp); i {
 			case 0:
 				return &v.state
@@ -5399,7 +5399,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[47].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[47].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCPerformManualOpCompleted); i {
 			case 0:
 				return &v.state
@@ -5411,7 +5411,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[48].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[48].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCReloadServerRegionSettings); i {
 			case 0:
 				return &v.state
@@ -5423,7 +5423,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[49].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[49].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCAdditionalWelcomeMsgList); i {
 			case 0:
 				return &v.state
@@ -5435,7 +5435,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[50].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[50].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgApplyRemoteConVars); i {
 			case 0:
 				return &v.state
@@ -5447,7 +5447,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[51].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[51].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientApplyRemoteConVars); i {
 			case 0:
 				return &v.state
@@ -5459,7 +5459,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[52].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[52].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToServerApplyRemoteConVars); i {
 			case 0:
 				return &v.state
@@ -5471,7 +5471,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[53].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[53].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCIntegrityStatus); i {
 			case 0:
 				return &v.state
@@ -5483,7 +5483,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[54].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[54].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCAggregateMetrics); i {
 			case 0:
 				return &v.state
@@ -5495,7 +5495,7 @@ func file_base_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_base_gcmessages_proto_msgTypes[55].Exporter = func(v interface{}, i int) interface{} {
+		file_base_gcmessages_proto_msgTypes[55].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientAggregateMetricsBackoff); i {
 			case 0:
 				return &v.state

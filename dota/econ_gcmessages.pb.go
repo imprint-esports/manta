@@ -11680,7 +11680,7 @@ func file_econ_gcmessages_proto_rawDescGZIP() []byte {
 
 var file_econ_gcmessages_proto_enumTypes = make([]protoimpl.EnumInfo, 15)
 var file_econ_gcmessages_proto_msgTypes = make([]protoimpl.MessageInfo, 139)
-var file_econ_gcmessages_proto_goTypes = []interface{}{
+var file_econ_gcmessages_proto_goTypes = []any{
 	(EGCItemMsg)(0),                                                       // 0: dota.EGCItemMsg
 	(EGCMsgInitiateTradeResponse)(0),                                      // 1: dota.EGCMsgInitiateTradeResponse
 	(CMsgRequestCrateItemsResponse_EResult)(0),                            // 2: dota.CMsgRequestCrateItemsResponse.EResult
@@ -11911,7 +11911,7 @@ func file_econ_gcmessages_proto_init() {
 	file_gcsdk_gcmessages_proto_init()
 	file_base_gcmessages_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_econ_gcmessages_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgApplyAutograph); i {
 			case 0:
 				return &v.state
@@ -11923,7 +11923,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAdjustItemEquippedState); i {
 			case 0:
 				return &v.state
@@ -11935,7 +11935,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgEconPlayerStrangeCountAdjustment); i {
 			case 0:
 				return &v.state
@@ -11947,7 +11947,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCraftingResponse); i {
 			case 0:
 				return &v.state
@@ -11959,7 +11959,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCRequestStoreSalesData); i {
 			case 0:
 				return &v.state
@@ -11971,7 +11971,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCRequestStoreSalesDataResponse); i {
 			case 0:
 				return &v.state
@@ -11983,7 +11983,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCRequestStoreSalesDataUpToDateResponse); i {
 			case 0:
 				return &v.state
@@ -11995,7 +11995,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCPingRequest); i {
 			case 0:
 				return &v.state
@@ -12007,7 +12007,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCPingResponse); i {
 			case 0:
 				return &v.state
@@ -12019,7 +12019,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGetUserSessionServer); i {
 			case 0:
 				return &v.state
@@ -12031,7 +12031,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGetUserSessionServerResponse); i {
 			case 0:
 				return &v.state
@@ -12043,7 +12043,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGetUserServerMembers); i {
 			case 0:
 				return &v.state
@@ -12055,7 +12055,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGetUserServerMembersResponse); i {
 			case 0:
 				return &v.state
@@ -12067,7 +12067,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgLookupMultipleAccountNames); i {
 			case 0:
 				return &v.state
@@ -12079,7 +12079,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgLookupMultipleAccountNamesResponse); i {
 			case 0:
 				return &v.state
@@ -12091,7 +12091,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgRequestCrateItems); i {
 			case 0:
 				return &v.state
@@ -12103,7 +12103,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgRequestCrateItemsResponse); i {
 			case 0:
 				return &v.state
@@ -12115,7 +12115,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgRequestCrateEscalationLevel); i {
 			case 0:
 				return &v.state
@@ -12127,7 +12127,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgRequestCrateEscalationLevelResponse); i {
 			case 0:
 				return &v.state
@@ -12139,7 +12139,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCCanUseDropRateBonus); i {
 			case 0:
 				return &v.state
@@ -12151,7 +12151,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSQLAddDropRateBonus); i {
 			case 0:
 				return &v.state
@@ -12163,7 +12163,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSQLUpgradeBattleBooster); i {
 			case 0:
 				return &v.state
@@ -12175,7 +12175,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCRefreshSOCache); i {
 			case 0:
 				return &v.state
@@ -12187,7 +12187,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCAddSubscriptionTime); i {
 			case 0:
 				return &v.state
@@ -12199,7 +12199,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGrantAccountRolledItems); i {
 			case 0:
 				return &v.state
@@ -12211,7 +12211,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCBetaDeleteItems); i {
 			case 0:
 				return &v.state
@@ -12223,7 +12223,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGrantSelfMadeItemToAccount); i {
 			case 0:
 				return &v.state
@@ -12235,7 +12235,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgUseItem); i {
 			case 0:
 				return &v.state
@@ -12247,7 +12247,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgServerUseItem); i {
 			case 0:
 				return &v.state
@@ -12259,7 +12259,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgUseMultipleItems); i {
 			case 0:
 				return &v.state
@@ -12271,7 +12271,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*CGCStoreRechargeRedirect_LineItem); i {
 			case 0:
 				return &v.state
@@ -12283,7 +12283,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[31].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCEconSQLWorkItemEmbeddedRollbackData); i {
 			case 0:
 				return &v.state
@@ -12295,7 +12295,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[32].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCraftStatue); i {
 			case 0:
 				return &v.state
@@ -12307,7 +12307,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[33].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgRedeemCode); i {
 			case 0:
 				return &v.state
@@ -12319,7 +12319,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[34].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgRedeemCodeResponse); i {
 			case 0:
 				return &v.state
@@ -12331,7 +12331,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[35].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDevNewItemRequest); i {
 			case 0:
 				return &v.state
@@ -12343,7 +12343,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[36].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDevNewItemRequestResponse); i {
 			case 0:
 				return &v.state
@@ -12355,7 +12355,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[37].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDevUnlockAllItemStyles); i {
 			case 0:
 				return &v.state
@@ -12367,7 +12367,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[38].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDevUnlockAllItemStylesResponse); i {
 			case 0:
 				return &v.state
@@ -12379,7 +12379,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[39].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCGetAccountSubscriptionItem); i {
 			case 0:
 				return &v.state
@@ -12391,7 +12391,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[40].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[40].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCGetAccountSubscriptionItemResponse); i {
 			case 0:
 				return &v.state
@@ -12403,7 +12403,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[41].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[41].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCAddGiftItem); i {
 			case 0:
 				return &v.state
@@ -12415,7 +12415,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[42].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCWrapAndDeliverGift); i {
 			case 0:
 				return &v.state
@@ -12427,7 +12427,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[43].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[43].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSQLGCToGCRevokeUntrustedGift); i {
 			case 0:
 				return &v.state
@@ -12439,7 +12439,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[44].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[44].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCWrapAndDeliverGiftResponse); i {
 			case 0:
 				return &v.state
@@ -12451,7 +12451,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[45].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[45].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCUnwrapGift); i {
 			case 0:
 				return &v.state
@@ -12463,7 +12463,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[46].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[46].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCGetGiftPermissions); i {
 			case 0:
 				return &v.state
@@ -12475,7 +12475,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[47].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[47].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCGetGiftPermissionsResponse); i {
 			case 0:
 				return &v.state
@@ -12487,7 +12487,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[48].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[48].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCUnpackBundle); i {
 			case 0:
 				return &v.state
@@ -12499,7 +12499,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[49].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[49].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCUnpackBundleResponse); i {
 			case 0:
 				return &v.state
@@ -12511,7 +12511,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[50].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[50].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCPackBundle); i {
 			case 0:
 				return &v.state
@@ -12523,7 +12523,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[51].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[51].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCPackBundleResponse); i {
 			case 0:
 				return &v.state
@@ -12535,7 +12535,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[52].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[52].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientStoreTransactionCompleted); i {
 			case 0:
 				return &v.state
@@ -12547,7 +12547,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[53].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[53].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCEquipItems); i {
 			case 0:
 				return &v.state
@@ -12559,7 +12559,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[54].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[54].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCEquipItemsResponse); i {
 			case 0:
 				return &v.state
@@ -12571,7 +12571,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[55].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[55].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCSetItemStyle); i {
 			case 0:
 				return &v.state
@@ -12583,7 +12583,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[56].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[56].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCSetItemStyleResponse); i {
 			case 0:
 				return &v.state
@@ -12595,7 +12595,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[57].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[57].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCUnlockItemStyle); i {
 			case 0:
 				return &v.state
@@ -12607,7 +12607,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[58].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[58].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCUnlockItemStyleResponse); i {
 			case 0:
 				return &v.state
@@ -12619,7 +12619,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[59].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[59].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCSetItemInventoryCategory); i {
 			case 0:
 				return &v.state
@@ -12631,7 +12631,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[60].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[60].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCUnlockCrate); i {
 			case 0:
 				return &v.state
@@ -12643,7 +12643,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[61].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[61].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCUnlockCrateResponse); i {
 			case 0:
 				return &v.state
@@ -12655,7 +12655,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[62].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[62].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCRemoveItemAttribute); i {
 			case 0:
 				return &v.state
@@ -12667,7 +12667,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[63].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[63].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCRemoveItemAttributeResponse); i {
 			case 0:
 				return &v.state
@@ -12679,7 +12679,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[64].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[64].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCNameItem); i {
 			case 0:
 				return &v.state
@@ -12691,7 +12691,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[65].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[65].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCNameItemResponse); i {
 			case 0:
 				return &v.state
@@ -12703,7 +12703,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[66].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[66].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCSetItemPosition); i {
 			case 0:
 				return &v.state
@@ -12715,7 +12715,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[67].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[67].Exporter = func(v any, i int) any {
 			switch v := v.(*CAttribute_ItemDynamicRecipeComponent); i {
 			case 0:
 				return &v.state
@@ -12727,7 +12727,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[68].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[68].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket); i {
 			case 0:
 				return &v.state
@@ -12739,7 +12739,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[69].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[69].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket_Empty); i {
 			case 0:
 				return &v.state
@@ -12751,7 +12751,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[70].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[70].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket_Effect); i {
 			case 0:
 				return &v.state
@@ -12763,7 +12763,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[71].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[71].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket_Color); i {
 			case 0:
 				return &v.state
@@ -12775,7 +12775,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[72].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[72].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket_Strange); i {
 			case 0:
 				return &v.state
@@ -12787,7 +12787,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[73].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[73].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket_Strange_DESERIALIZE_FROM_STRING_ONLY); i {
 			case 0:
 				return &v.state
@@ -12799,7 +12799,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[74].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[74].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket_Spectator); i {
 			case 0:
 				return &v.state
@@ -12811,7 +12811,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[75].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[75].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket_AssetModifier); i {
 			case 0:
 				return &v.state
@@ -12823,7 +12823,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[76].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[76].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket_AssetModifier_DESERIALIZE_FROM_STRING_ONLY); i {
 			case 0:
 				return &v.state
@@ -12835,7 +12835,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[77].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[77].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket_Autograph); i {
 			case 0:
 				return &v.state
@@ -12847,7 +12847,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[78].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[78].Exporter = func(v any, i int) any {
 			switch v := v.(*CProtoItemSocket_StaticVisuals); i {
 			case 0:
 				return &v.state
@@ -12859,7 +12859,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[79].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[79].Exporter = func(v any, i int) any {
 			switch v := v.(*CAttribute_String); i {
 			case 0:
 				return &v.state
@@ -12871,7 +12871,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[80].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[80].Exporter = func(v any, i int) any {
 			switch v := v.(*CWorkshop_GetItemDailyRevenue_Request); i {
 			case 0:
 				return &v.state
@@ -12883,7 +12883,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[81].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[81].Exporter = func(v any, i int) any {
 			switch v := v.(*CWorkshop_GetItemDailyRevenue_Response); i {
 			case 0:
 				return &v.state
@@ -12895,7 +12895,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[82].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[82].Exporter = func(v any, i int) any {
 			switch v := v.(*CWorkshop_GetPackageDailyRevenue_Request); i {
 			case 0:
 				return &v.state
@@ -12907,7 +12907,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[83].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[83].Exporter = func(v any, i int) any {
 			switch v := v.(*CWorkshop_GetPackageDailyRevenue_Response); i {
 			case 0:
 				return &v.state
@@ -12919,7 +12919,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[84].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[84].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSQLGCToGCGrantBackpackSlots); i {
 			case 0:
 				return &v.state
@@ -12931,7 +12931,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[85].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[85].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCLookupAccountName); i {
 			case 0:
 				return &v.state
@@ -12943,7 +12943,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[86].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[86].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCLookupAccountNameResponse); i {
 			case 0:
 				return &v.state
@@ -12955,7 +12955,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[87].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[87].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCreateStaticRecipe); i {
 			case 0:
 				return &v.state
@@ -12967,7 +12967,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[88].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[88].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCreateStaticRecipeResponse); i {
 			case 0:
 				return &v.state
@@ -12979,7 +12979,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[89].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[89].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgProcessTransactionOrder); i {
 			case 0:
 				return &v.state
@@ -12991,7 +12991,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[90].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[90].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCStoreProcessCDKeyTransaction); i {
 			case 0:
 				return &v.state
@@ -13003,7 +13003,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[91].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[91].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCStoreProcessCDKeyTransactionResponse); i {
 			case 0:
 				return &v.state
@@ -13015,7 +13015,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[92].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[92].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCStoreProcessSettlement); i {
 			case 0:
 				return &v.state
@@ -13027,7 +13027,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[93].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[93].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCStoreProcessSettlementResponse); i {
 			case 0:
 				return &v.state
@@ -13039,7 +13039,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[94].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[94].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCBroadcastConsoleCommand); i {
 			case 0:
 				return &v.state
@@ -13051,7 +13051,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[95].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[95].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCConsoleOutput); i {
 			case 0:
 				return &v.state
@@ -13063,7 +13063,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[96].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[96].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgItemAges); i {
 			case 0:
 				return &v.state
@@ -13075,7 +13075,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[97].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[97].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCInternalTestMsg); i {
 			case 0:
 				return &v.state
@@ -13087,7 +13087,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[98].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[98].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCClientServerVersionsUpdated); i {
 			case 0:
 				return &v.state
@@ -13099,7 +13099,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[99].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[99].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCBroadcastMessageFromSub); i {
 			case 0:
 				return &v.state
@@ -13111,7 +13111,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[100].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[100].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientCurrencyPricePoints); i {
 			case 0:
 				return &v.state
@@ -13123,7 +13123,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[101].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[101].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgBannedWordList); i {
 			case 0:
 				return &v.state
@@ -13135,7 +13135,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[102].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[102].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCFlushSteamInventoryCache); i {
 			case 0:
 				return &v.state
@@ -13147,7 +13147,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[103].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[103].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCUpdateSubscriptionItems); i {
 			case 0:
 				return &v.state
@@ -13159,7 +13159,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[104].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[104].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCSelfPing); i {
 			case 0:
 				return &v.state
@@ -13171,7 +13171,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[105].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[105].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGetInfuxIntervalStats); i {
 			case 0:
 				return &v.state
@@ -13183,7 +13183,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[106].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[106].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGetInfuxIntervalStatsResponse); i {
 			case 0:
 				return &v.state
@@ -13195,7 +13195,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[107].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[107].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCPurchaseSucceeded); i {
 			case 0:
 				return &v.state
@@ -13207,7 +13207,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[108].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[108].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCGetLimitedItemPurchaseQuantity); i {
 			case 0:
 				return &v.state
@@ -13219,7 +13219,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[109].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[109].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCGetLimitedItemPurchaseQuantityResponse); i {
 			case 0:
 				return &v.state
@@ -13231,7 +13231,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[110].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[110].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCGetInFlightItemCharges); i {
 			case 0:
 				return &v.state
@@ -13243,7 +13243,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[111].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[111].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCGetInFlightItemChargesResponse); i {
 			case 0:
 				return &v.state
@@ -13255,7 +13255,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[112].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[112].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCPurchaseChargeCostItems); i {
 			case 0:
 				return &v.state
@@ -13267,7 +13267,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[113].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[113].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCPurchaseChargeCostItemsResponse); i {
 			case 0:
 				return &v.state
@@ -13279,7 +13279,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[114].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[114].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientInFlightChargesUpdated); i {
 			case 0:
 				return &v.state
@@ -13291,7 +13291,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[115].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[115].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCancelUnfinalizedTransactions); i {
 			case 0:
 				return &v.state
@@ -13303,7 +13303,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[116].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[116].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCancelUnfinalizedTransactionsResponse); i {
 			case 0:
 				return &v.state
@@ -13315,7 +13315,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[117].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[117].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCUpdateWelcomeMsg); i {
 			case 0:
 				return &v.state
@@ -13327,7 +13327,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[118].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[118].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgEconPlayerStrangeCountAdjustment_CStrangeCountAdjustment); i {
 			case 0:
 				return &v.state
@@ -13339,7 +13339,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[119].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[119].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCRequestStoreSalesDataResponse_Price); i {
 			case 0:
 				return &v.state
@@ -13351,7 +13351,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[120].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[120].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgLookupMultipleAccountNamesResponse_Account); i {
 			case 0:
 				return &v.state
@@ -13363,7 +13363,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[121].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[121].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGrantAccountRolledItems_Item); i {
 			case 0:
 				return &v.state
@@ -13375,7 +13375,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[122].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[122].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGrantAccountRolledItems_Item_DynamicAttribute); i {
 			case 0:
 				return &v.state
@@ -13387,7 +13387,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[123].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[123].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCGrantAccountRolledItems_Item_AdditionalAuditEntry); i {
 			case 0:
 				return &v.state
@@ -13399,7 +13399,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[124].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[124].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCGetGiftPermissionsResponse_FriendPermission); i {
 			case 0:
 				return &v.state
@@ -13411,7 +13411,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[125].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[125].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCUnlockCrateResponse_Item); i {
 			case 0:
 				return &v.state
@@ -13423,7 +13423,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[126].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[126].Exporter = func(v any, i int) any {
 			switch v := v.(*CWorkshop_GetItemDailyRevenue_Response_CountryDailyRevenue); i {
 			case 0:
 				return &v.state
@@ -13435,7 +13435,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[127].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[127].Exporter = func(v any, i int) any {
 			switch v := v.(*CWorkshop_GetPackageDailyRevenue_Response_CountryDailyRevenue); i {
 			case 0:
 				return &v.state
@@ -13447,7 +13447,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[128].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[128].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCreateStaticRecipe_Item); i {
 			case 0:
 				return &v.state
@@ -13459,7 +13459,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[129].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[129].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCreateStaticRecipeResponse_OutputItem); i {
 			case 0:
 				return &v.state
@@ -13471,7 +13471,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[130].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[130].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCreateStaticRecipeResponse_InputError); i {
 			case 0:
 				return &v.state
@@ -13483,7 +13483,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[131].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[131].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCCreateStaticRecipeResponse_AdditionalOutput); i {
 			case 0:
 				return &v.state
@@ -13495,7 +13495,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[132].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[132].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgProcessTransactionOrder_Item); i {
 			case 0:
 				return &v.state
@@ -13507,7 +13507,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[133].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[133].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCConsoleOutput_OutputLine); i {
 			case 0:
 				return &v.state
@@ -13519,7 +13519,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[134].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[134].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgItemAges_MaxItemIDTimestamp); i {
 			case 0:
 				return &v.state
@@ -13531,7 +13531,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[135].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[135].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientCurrencyPricePoints_Currency); i {
 			case 0:
 				return &v.state
@@ -13543,7 +13543,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[136].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[136].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToGCFlushSteamInventoryCache_Key); i {
 			case 0:
 				return &v.state
@@ -13555,7 +13555,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[137].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[137].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCPurchaseChargeCostItems_Item); i {
 			case 0:
 				return &v.state
@@ -13567,7 +13567,7 @@ func file_econ_gcmessages_proto_init() {
 				return nil
 			}
 		}
-		file_econ_gcmessages_proto_msgTypes[138].Exporter = func(v interface{}, i int) interface{} {
+		file_econ_gcmessages_proto_msgTypes[138].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientInFlightChargesUpdated_ItemCharges); i {
 			case 0:
 				return &v.state

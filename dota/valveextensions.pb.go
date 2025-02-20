@@ -7,9 +7,9 @@
 package dota
 
 import (
+	descriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	descriptorpb "google.golang.org/protobuf/types/descriptorpb"
 	reflect "reflect"
 	sync "sync"
 )
@@ -88,7 +88,7 @@ func (EProtoDebugVisiblity) EnumDescriptor() ([]byte, []int) {
 
 var file_valveextensions_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
-		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
+		ExtendedType:  (*descriptor.FieldOptions)(nil),
 		ExtensionType: (*bool)(nil),
 		Field:         61000,
 		Name:          "dota.valve_map_field",
@@ -96,7 +96,7 @@ var file_valveextensions_proto_extTypes = []protoimpl.ExtensionInfo{
 		Filename:      "valveextensions.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
+		ExtendedType:  (*descriptor.FieldOptions)(nil),
 		ExtensionType: (*bool)(nil),
 		Field:         61001,
 		Name:          "dota.valve_map_key",
@@ -104,7 +104,7 @@ var file_valveextensions_proto_extTypes = []protoimpl.ExtensionInfo{
 		Filename:      "valveextensions.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
+		ExtendedType:  (*descriptor.FieldOptions)(nil),
 		ExtensionType: (*int32)(nil),
 		Field:         61002,
 		Name:          "dota.diff_encode_field",
@@ -112,7 +112,7 @@ var file_valveextensions_proto_extTypes = []protoimpl.ExtensionInfo{
 		Filename:      "valveextensions.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
+		ExtendedType:  (*descriptor.FieldOptions)(nil),
 		ExtensionType: (*bool)(nil),
 		Field:         61003,
 		Name:          "dota.delta_ignore",
@@ -120,7 +120,7 @@ var file_valveextensions_proto_extTypes = []protoimpl.ExtensionInfo{
 		Filename:      "valveextensions.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
+		ExtendedType:  (*descriptor.FieldOptions)(nil),
 		ExtensionType: (*uint32)(nil),
 		Field:         61004,
 		Name:          "dota.steamml_max_entries",
@@ -128,7 +128,7 @@ var file_valveextensions_proto_extTypes = []protoimpl.ExtensionInfo{
 		Filename:      "valveextensions.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
+		ExtendedType:  (*descriptor.FieldOptions)(nil),
 		ExtensionType: (*bool)(nil),
 		Field:         61005,
 		Name:          "dota.steamml_is_timestamp",
@@ -136,7 +136,7 @@ var file_valveextensions_proto_extTypes = []protoimpl.ExtensionInfo{
 		Filename:      "valveextensions.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
+		ExtendedType:  (*descriptor.FieldOptions)(nil),
 		ExtensionType: (*uint32)(nil),
 		Field:         61006,
 		Name:          "dota.steamlearn_count",
@@ -160,7 +160,7 @@ var file_valveextensions_proto_extTypes = []protoimpl.ExtensionInfo{
 		Filename:      "valveextensions.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.EnumValueOptions)(nil),
+		ExtendedType:  (*descriptor.EnumValueOptions)(nil),
 		ExtensionType: (*string)(nil),
 		Field:         1001,
 		Name:          "dota.schema_description",
@@ -168,7 +168,7 @@ var file_valveextensions_proto_extTypes = []protoimpl.ExtensionInfo{
 		Filename:      "valveextensions.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.EnumValueOptions)(nil),
+		ExtendedType:  (*descriptor.EnumValueOptions)(nil),
 		ExtensionType: (*bool)(nil),
 		Field:         1002,
 		Name:          "dota.schema_suppress_enumerator",
@@ -177,7 +177,7 @@ var file_valveextensions_proto_extTypes = []protoimpl.ExtensionInfo{
 	},
 }
 
-// Extension fields to descriptorpb.FieldOptions.
+// Extension fields to descriptor.FieldOptions.
 var (
 	// optional bool valve_map_field = 61000;
 	E_ValveMapField = &file_valveextensions_proto_extTypes[0]
@@ -197,7 +197,7 @@ var (
 	E_DebugprintVisibility = &file_valveextensions_proto_extTypes[7]
 )
 
-// Extension fields to descriptorpb.EnumValueOptions.
+// Extension fields to descriptor.EnumValueOptions.
 var (
 	// optional string schema_friendly_name = 1000;
 	E_SchemaFriendlyName = &file_valveextensions_proto_extTypes[8]

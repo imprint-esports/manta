@@ -7,9 +7,9 @@
 package dota
 
 import (
+	descriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	descriptorpb "google.golang.org/protobuf/types/descriptorpb"
 	reflect "reflect"
 	sync "sync"
 )
@@ -802,7 +802,7 @@ func (x *CGCMsgGetIPLocationResponse) GetInfos() []*CIPLocationInfo {
 
 var file_steammessages_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
-		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
+		ExtendedType:  (*descriptor.FieldOptions)(nil),
 		ExtensionType: (*bool)(nil),
 		Field:         60000,
 		Name:          "dota.key_field",
@@ -810,7 +810,7 @@ var file_steammessages_proto_extTypes = []protoimpl.ExtensionInfo{
 		Filename:      "steammessages.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.MessageOptions)(nil),
+		ExtendedType:  (*descriptor.MessageOptions)(nil),
 		ExtensionType: (*int32)(nil),
 		Field:         60000,
 		Name:          "dota.msgpool_soft_limit",
@@ -818,7 +818,7 @@ var file_steammessages_proto_extTypes = []protoimpl.ExtensionInfo{
 		Filename:      "steammessages.proto",
 	},
 	{
-		ExtendedType:  (*descriptorpb.MessageOptions)(nil),
+		ExtendedType:  (*descriptor.MessageOptions)(nil),
 		ExtensionType: (*int32)(nil),
 		Field:         60001,
 		Name:          "dota.msgpool_hard_limit",
@@ -827,13 +827,13 @@ var file_steammessages_proto_extTypes = []protoimpl.ExtensionInfo{
 	},
 }
 
-// Extension fields to descriptorpb.FieldOptions.
+// Extension fields to descriptor.FieldOptions.
 var (
 	// optional bool key_field = 60000;
 	E_KeyField = &file_steammessages_proto_extTypes[0]
 )
 
-// Extension fields to descriptorpb.MessageOptions.
+// Extension fields to descriptor.MessageOptions.
 var (
 	// optional int32 msgpool_soft_limit = 60000;
 	E_MsgpoolSoftLimit = &file_steammessages_proto_extTypes[1]
@@ -1036,10 +1036,10 @@ var file_steammessages_proto_rawDesc = []byte{
 	0x69, 0x74, 0x12, 0x1f, 0x2e, 0x67, 0x6f, 0x6f, 0x67, 0x6c, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74,
 	0x6f, 0x62, 0x75, 0x66, 0x2e, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x4f, 0x70, 0x74, 0x69,
 	0x6f, 0x6e, 0x73, 0x18, 0xe1, 0xd4, 0x03, 0x20, 0x01, 0x28, 0x05, 0x52, 0x10, 0x6d, 0x73, 0x67,
-	0x70, 0x6f, 0x6f, 0x6c, 0x48, 0x61, 0x72, 0x64, 0x4c, 0x69, 0x6d, 0x69, 0x74, 0x42, 0x25, 0x5a,
-	0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x64, 0x6f, 0x74, 0x61,
-	0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b,
-	0x64, 0x6f, 0x74, 0x61,
+	0x70, 0x6f, 0x6f, 0x6c, 0x48, 0x61, 0x72, 0x64, 0x4c, 0x69, 0x6d, 0x69, 0x74, 0x42, 0x2c, 0x5a,
+	0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x69, 0x6d, 0x70, 0x72,
+	0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x73, 0x2f, 0x6d, 0x61, 0x6e, 0x74,
+	0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
 }
 
 var (
@@ -1056,7 +1056,7 @@ func file_steammessages_proto_rawDescGZIP() []byte {
 
 var file_steammessages_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_steammessages_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
-var file_steammessages_proto_goTypes = []interface{}{
+var file_steammessages_proto_goTypes = []any{
 	(EGCPlatform)(0),                                // 0: dota.EGCPlatform
 	(GCProtoBufMsgSrc)(0),                           // 1: dota.GCProtoBufMsgSrc
 	(*CMsgProtoBufHeader)(nil),                      // 2: dota.CMsgProtoBufHeader
@@ -1064,8 +1064,8 @@ var file_steammessages_proto_goTypes = []interface{}{
 	(*CGCSystemMsg_GetAccountDetails_Response)(nil), // 4: dota.CGCSystemMsg_GetAccountDetails_Response
 	(*CIPLocationInfo)(nil),                         // 5: dota.CIPLocationInfo
 	(*CGCMsgGetIPLocationResponse)(nil),             // 6: dota.CGCMsgGetIPLocationResponse
-	(*descriptorpb.FieldOptions)(nil),               // 7: google.protobuf.FieldOptions
-	(*descriptorpb.MessageOptions)(nil),             // 8: google.protobuf.MessageOptions
+	(*descriptor.FieldOptions)(nil),                 // 7: google.protobuf.FieldOptions
+	(*descriptor.MessageOptions)(nil),               // 8: google.protobuf.MessageOptions
 }
 var file_steammessages_proto_depIdxs = []int32{
 	1, // 0: dota.CMsgProtoBufHeader.gc_msg_src:type_name -> dota.GCProtoBufMsgSrc
@@ -1086,7 +1086,7 @@ func file_steammessages_proto_init() {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_steammessages_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgProtoBufHeader); i {
 			case 0:
 				return &v.state
@@ -1098,7 +1098,7 @@ func file_steammessages_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CGCSystemMsg_GetAccountDetails); i {
 			case 0:
 				return &v.state
@@ -1110,7 +1110,7 @@ func file_steammessages_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CGCSystemMsg_GetAccountDetails_Response); i {
 			case 0:
 				return &v.state
@@ -1122,7 +1122,7 @@ func file_steammessages_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CIPLocationInfo); i {
 			case 0:
 				return &v.state
@@ -1134,7 +1134,7 @@ func file_steammessages_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CGCMsgGetIPLocationResponse); i {
 			case 0:
 				return &v.state

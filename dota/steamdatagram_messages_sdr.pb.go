@@ -6230,7 +6230,7 @@ func file_steamdatagram_messages_sdr_proto_init() {
 	file_steamnetworkingsockets_messages_certs_proto_init()
 	file_steamnetworkingsockets_messages_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_steamdatagram_messages_sdr_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_sdr_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamNetworkingIPAddress); i {
 			case 0:
 				return &v.state
@@ -6242,7 +6242,7 @@ func file_steamdatagram_messages_sdr_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_sdr_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_sdr_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramSignedMessageGeneric); i {
 			case 0:
 				return &v.state
@@ -6254,7 +6254,7 @@ func file_steamdatagram_messages_sdr_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_sdr_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_sdr_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramRouterPingReply); i {
 			case 0:
 				return &v.state
@@ -6266,7 +6266,7 @@ func file_steamdatagram_messages_sdr_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_sdr_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_sdr_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramGameserverPingRequestBody); i {
 			case 0:
 				return &v.state
@@ -6278,7 +6278,7 @@ func file_steamdatagram_messages_sdr_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_sdr_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_sdr_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramGameserverPingRequestEnvelope); i {
 			case 0:
 				return &v.state
@@ -6290,7 +6290,7 @@ func file_steamdatagram_messages_sdr_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_sdr_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_sdr_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramGameserverPingReplyData); i {
 			case 0:
 				return &v.state
@@ -6302,7 +6302,7 @@ func file_steamdatagram_messages_sdr_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_sdr_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_sdr_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramNoSessionRelayToClient); i {
 			case 0:
 				return &v.state
@@ -6314,7 +6314,7 @@ func file_steamdatagram_messages_sdr_proto_init() {
 				return nil
 			}
 		}
-		file_steamdatagram_messages_sdr_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_steamdatagram_messages_sdr_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSteamDatagramNoSessionRelayToPeer); i {
 			case 0:
 				return &v.state

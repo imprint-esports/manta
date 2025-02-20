@@ -7,9 +7,9 @@
 package dota
 
 import (
+	descriptor "github.com/golang/protobuf/protoc-gen-go/descriptor"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	descriptorpb "google.golang.org/protobuf/types/descriptorpb"
 	reflect "reflect"
 	sync "sync"
 )
@@ -148,7 +148,7 @@ func (EHeroSelectionText) EnumDescriptor() ([]byte, []int) {
 
 var file_dota_hud_types_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
-		ExtendedType:  (*descriptorpb.EnumValueOptions)(nil),
+		ExtendedType:  (*descriptor.EnumValueOptions)(nil),
 		ExtensionType: (*string)(nil),
 		Field:         51501,
 		Name:          "dota.hud_localize_token",
@@ -157,7 +157,7 @@ var file_dota_hud_types_proto_extTypes = []protoimpl.ExtensionInfo{
 	},
 }
 
-// Extension fields to descriptorpb.EnumValueOptions.
+// Extension fields to descriptor.EnumValueOptions.
 var (
 	// optional string hud_localize_token = 51501;
 	E_HudLocalizeToken = &file_dota_hud_types_proto_extTypes[0]
@@ -270,9 +270,9 @@ func file_dota_hud_types_proto_rawDescGZIP() []byte {
 }
 
 var file_dota_hud_types_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_dota_hud_types_proto_goTypes = []interface{}{
-	(EHeroSelectionText)(0),               // 0: dota.EHeroSelectionText
-	(*descriptorpb.EnumValueOptions)(nil), // 1: google.protobuf.EnumValueOptions
+var file_dota_hud_types_proto_goTypes = []any{
+	(EHeroSelectionText)(0),             // 0: dota.EHeroSelectionText
+	(*descriptor.EnumValueOptions)(nil), // 1: google.protobuf.EnumValueOptions
 }
 var file_dota_hud_types_proto_depIdxs = []int32{
 	1, // 0: dota.hud_localize_token:extendee -> google.protobuf.EnumValueOptions

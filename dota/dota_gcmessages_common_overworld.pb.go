@@ -5335,7 +5335,7 @@ func file_dota_gcmessages_common_overworld_proto_init() {
 	file_dota_gcmessages_common_survivors_proto_init()
 	file_gcsdk_gcmessages_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_dota_gcmessages_common_overworld_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_common_overworld_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgOverworldTokenCount); i {
 			case 0:
 				return &v.state
@@ -5347,7 +5347,7 @@ func file_dota_gcmessages_common_overworld_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_common_overworld_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_common_overworld_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgOverworldTokenQuantity); i {
 			case 0:
 				return &v.state
@@ -5359,7 +5359,7 @@ func file_dota_gcmessages_common_overworld_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_common_overworld_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_common_overworld_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgOverworldEncounterTokenTreasureData); i {
 			case 0:
 				return &v.state
@@ -5371,7 +5371,7 @@ func file_dota_gcmessages_common_overworld_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_common_overworld_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_common_overworld_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgOverworldEncounterTokenQuestData); i {
 			case 0:
 				return &v.state
@@ -5383,7 +5383,7 @@ func file_dota_gcmessages_common_overworld_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_common_overworld_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_common_overworld_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgOverworldHeroList); i {
 			case 0:
 				return &v.state
@@ -5395,7 +5395,7 @@ func file_dota_gcmessages_common_overworld_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_common_overworld_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_common_overworld_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgOverworldEncounterChooseHeroData); i {
 			case 0:
 				return &v.state
@@ -5407,7 +5407,7 @@ func file_dota_gcmessages_common_overworld_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_common_overworld_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_common_overworld_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgOverworldEncounterProgressData); i {
 			case 0:
 				return &v.state
@@ -5419,7 +5419,7 @@ func file_dota_gcmessages_common_overworld_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_common_overworld_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_common_overworld_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgOverworldEncounterData); i {
 			case 0:
 				return &v.state
@@ -5431,7 +5431,7 @@ func file_dota_gcmessages_common_overworld_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_common_overworld_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_common_overworld_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgOverworldNode); i {
 			case 0:
 				return &v.state
@@ -5443,7 +5443,7 @@ func file_dota_gcmessages_common_overworld_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_common_overworld_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_common_overworld_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgOverworldPath); i {
 			case 0:
 				return &v.state

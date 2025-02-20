@@ -4692,7 +4692,7 @@ func file_dota_gcmessages_webapi_proto_init() {
 	file_dota_gcmessages_common_proto_init()
 	file_dota_match_metadata_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_dota_gcmessages_webapi_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_webapi_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgArcanaVotes); i {
 			case 0:
 				return &v.state
@@ -4704,7 +4704,7 @@ func file_dota_gcmessages_webapi_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_webapi_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_webapi_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTADPCFeed); i {
 			case 0:
 				return &v.state
@@ -4716,7 +4716,7 @@ func file_dota_gcmessages_webapi_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_webapi_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_webapi_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTADPCUserInfo); i {
 			case 0:
 				return &v.state
@@ -4728,7 +4728,7 @@ func file_dota_gcmessages_webapi_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_webapi_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_webapi_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDraftTrivia); i {
 			case 0:
 				return &v.state
@@ -4740,7 +4740,7 @@ func file_dota_gcmessages_webapi_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_webapi_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_webapi_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTeamFanContentAssetStatus); i {
 			case 0:
 				return &v.state
@@ -4752,7 +4752,7 @@ func file_dota_gcmessages_webapi_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_webapi_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_webapi_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTeamFanContentAssetStatusResponse); i {
 			case 0:
 				return &v.state
@@ -4764,7 +4764,7 @@ func file_dota_gcmessages_webapi_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_webapi_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_webapi_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTeamFanContentStatus); i {
 			case 0:
 				return &v.state
@@ -4776,7 +4776,7 @@ func file_dota_gcmessages_webapi_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_webapi_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_webapi_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgTeamFanContentAutographStatus); i {
 			case 0:
 				return &v.state

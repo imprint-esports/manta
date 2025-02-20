@@ -635,9 +635,10 @@ var file_steammessages_cloud_steamworkssdk_proto_rawDesc = []byte{
 	0x73, 0x20, 0x63, 0x6c, 0x6f, 0x75, 0x64, 0x2e, 0x1a, 0x29, 0x82, 0xb5, 0x18, 0x25, 0x41, 0x20,
 	0x73, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x20, 0x66, 0x6f, 0x72, 0x20, 0x53, 0x74, 0x65, 0x61,
 	0x6d, 0x20, 0x43, 0x6c, 0x6f, 0x75, 0x64, 0x20, 0x6f, 0x70, 0x65, 0x72, 0x61, 0x74, 0x69, 0x6f,
-	0x6e, 0x73, 0x2e, 0x42, 0x25, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f,
-	0x6d, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61,
-	0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
+	0x6e, 0x73, 0x2e, 0x42, 0x2c, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f,
+	0x6d, 0x2f, 0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f, 0x72, 0x74,
+	0x73, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74,
+	0x61,
 }
 
 var (
@@ -653,7 +654,7 @@ func file_steammessages_cloud_steamworkssdk_proto_rawDescGZIP() []byte {
 }
 
 var file_steammessages_cloud_steamworkssdk_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
-var file_steammessages_cloud_steamworkssdk_proto_goTypes = []interface{}{
+var file_steammessages_cloud_steamworkssdk_proto_goTypes = []any{
 	(*CCloud_GetUploadServerInfo_Request)(nil),  // 0: dota.CCloud_GetUploadServerInfo_Request
 	(*CCloud_GetUploadServerInfo_Response)(nil), // 1: dota.CCloud_GetUploadServerInfo_Response
 	(*CCloud_GetFileDetails_Request)(nil),       // 2: dota.CCloud_GetFileDetails_Request
@@ -689,7 +690,7 @@ func file_steammessages_cloud_steamworkssdk_proto_init() {
 	}
 	file_steammessages_unified_base_steamworkssdk_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_steammessages_cloud_steamworkssdk_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_cloud_steamworkssdk_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CCloud_GetUploadServerInfo_Request); i {
 			case 0:
 				return &v.state
@@ -701,7 +702,7 @@ func file_steammessages_cloud_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_cloud_steamworkssdk_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_cloud_steamworkssdk_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CCloud_GetUploadServerInfo_Response); i {
 			case 0:
 				return &v.state
@@ -713,7 +714,7 @@ func file_steammessages_cloud_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_cloud_steamworkssdk_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_cloud_steamworkssdk_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CCloud_GetFileDetails_Request); i {
 			case 0:
 				return &v.state
@@ -725,7 +726,7 @@ func file_steammessages_cloud_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_cloud_steamworkssdk_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_cloud_steamworkssdk_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CCloud_UserFile); i {
 			case 0:
 				return &v.state
@@ -737,7 +738,7 @@ func file_steammessages_cloud_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_cloud_steamworkssdk_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_cloud_steamworkssdk_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CCloud_GetFileDetails_Response); i {
 			case 0:
 				return &v.state
@@ -749,7 +750,7 @@ func file_steammessages_cloud_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_cloud_steamworkssdk_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_cloud_steamworkssdk_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CCloud_EnumerateUserFiles_Request); i {
 			case 0:
 				return &v.state
@@ -761,7 +762,7 @@ func file_steammessages_cloud_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_cloud_steamworkssdk_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_cloud_steamworkssdk_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CCloud_EnumerateUserFiles_Response); i {
 			case 0:
 				return &v.state
@@ -773,7 +774,7 @@ func file_steammessages_cloud_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_cloud_steamworkssdk_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_cloud_steamworkssdk_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CCloud_Delete_Request); i {
 			case 0:
 				return &v.state
@@ -785,7 +786,7 @@ func file_steammessages_cloud_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_cloud_steamworkssdk_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_cloud_steamworkssdk_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CCloud_Delete_Response); i {
 			case 0:
 				return &v.state

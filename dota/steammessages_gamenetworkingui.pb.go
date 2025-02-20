@@ -695,9 +695,10 @@ var file_steammessages_gamenetworkingui_proto_rawDesc = []byte{
 	0x29, 0x2e, 0x64, 0x6f, 0x74, 0x61, 0x2e, 0x43, 0x47, 0x61, 0x6d, 0x65, 0x4e, 0x65, 0x74, 0x77,
 	0x6f, 0x72, 0x6b, 0x69, 0x6e, 0x67, 0x55, 0x49, 0x5f, 0x43, 0x6f, 0x6e, 0x6e, 0x65, 0x63, 0x74,
 	0x69, 0x6f, 0x6e, 0x53, 0x75, 0x6d, 0x6d, 0x61, 0x72, 0x79, 0x52, 0x07, 0x6d, 0x61, 0x69, 0x6e,
-	0x43, 0x78, 0x6e, 0x42, 0x2a, 0x48, 0x01, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e,
-	0x63, 0x6f, 0x6d, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e,
-	0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61, 0x80, 0x01, 0x01,
+	0x43, 0x78, 0x6e, 0x42, 0x31, 0x48, 0x01, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e,
+	0x63, 0x6f, 0x6d, 0x2f, 0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f,
+	0x72, 0x74, 0x73, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64,
+	0x6f, 0x74, 0x61, 0x80, 0x01, 0x01,
 }
 
 var (
@@ -713,7 +714,7 @@ func file_steammessages_gamenetworkingui_proto_rawDescGZIP() []byte {
 }
 
 var file_steammessages_gamenetworkingui_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
-var file_steammessages_gamenetworkingui_proto_goTypes = []interface{}{
+var file_steammessages_gamenetworkingui_proto_goTypes = []any{
 	(*CGameNetworkingUI_GlobalState)(nil),       // 0: dota.CGameNetworkingUI_GlobalState
 	(*CGameNetworkingUI_ConnectionState)(nil),   // 1: dota.CGameNetworkingUI_ConnectionState
 	(*CGameNetworkingUI_Message)(nil),           // 2: dota.CGameNetworkingUI_Message
@@ -745,7 +746,7 @@ func file_steammessages_gamenetworkingui_proto_init() {
 	file_steamnetworkingsockets_messages_proto_init()
 	file_steamdatagram_messages_sdr_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_steammessages_gamenetworkingui_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_gamenetworkingui_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CGameNetworkingUI_GlobalState); i {
 			case 0:
 				return &v.state
@@ -757,7 +758,7 @@ func file_steammessages_gamenetworkingui_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_gamenetworkingui_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_gamenetworkingui_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CGameNetworkingUI_ConnectionState); i {
 			case 0:
 				return &v.state
@@ -769,7 +770,7 @@ func file_steammessages_gamenetworkingui_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_gamenetworkingui_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_gamenetworkingui_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CGameNetworkingUI_Message); i {
 			case 0:
 				return &v.state
@@ -781,7 +782,7 @@ func file_steammessages_gamenetworkingui_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_gamenetworkingui_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_gamenetworkingui_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CGameNetworkingUI_ConnectionSummary); i {
 			case 0:
 				return &v.state
@@ -793,7 +794,7 @@ func file_steammessages_gamenetworkingui_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_gamenetworkingui_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_gamenetworkingui_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CGameNetworkingUI_AppSummary); i {
 			case 0:
 				return &v.state

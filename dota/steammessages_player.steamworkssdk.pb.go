@@ -2581,9 +2581,9 @@ var file_steammessages_player_steamworkssdk_proto_rawDesc = []byte{
 	0x1a, 0x2d, 0x82, 0xb5, 0x18, 0x29, 0x41, 0x20, 0x73, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x20,
 	0x66, 0x6f, 0x72, 0x20, 0x61, 0x63, 0x63, 0x65, 0x73, 0x73, 0x69, 0x6e, 0x67, 0x20, 0x53, 0x74,
 	0x65, 0x61, 0x6d, 0x20, 0x70, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x20, 0x64, 0x61, 0x74, 0x61, 0x42,
-	0x28, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x64, 0x6f,
-	0x74, 0x61, 0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74,
-	0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61, 0x80, 0x01, 0x01,
+	0x2f, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x69, 0x6d,
+	0x70, 0x72, 0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x73, 0x2f, 0x6d, 0x61,
+	0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61, 0x80, 0x01, 0x01,
 }
 
 var (
@@ -2600,7 +2600,7 @@ func file_steammessages_player_steamworkssdk_proto_rawDescGZIP() []byte {
 
 var file_steammessages_player_steamworkssdk_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_steammessages_player_steamworkssdk_proto_msgTypes = make([]protoimpl.MessageInfo, 38)
-var file_steammessages_player_steamworkssdk_proto_goTypes = []interface{}{
+var file_steammessages_player_steamworkssdk_proto_goTypes = []any{
 	(ENotificationSetting)(0),                                           // 0: dota.ENotificationSetting
 	(*CPlayer_GetMutualFriendsForIncomingInvites_Request)(nil),          // 1: dota.CPlayer_GetMutualFriendsForIncomingInvites_Request
 	(*CPlayer_IncomingInviteMutualFriendList)(nil),                      // 2: dota.CPlayer_IncomingInviteMutualFriendList
@@ -2707,7 +2707,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 	}
 	file_steammessages_unified_base_steamworkssdk_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_steammessages_player_steamworkssdk_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetMutualFriendsForIncomingInvites_Request); i {
 			case 0:
 				return &v.state
@@ -2719,7 +2719,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_IncomingInviteMutualFriendList); i {
 			case 0:
 				return &v.state
@@ -2731,7 +2731,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetMutualFriendsForIncomingInvites_Response); i {
 			case 0:
 				return &v.state
@@ -2743,7 +2743,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetFriendsGameplayInfo_Request); i {
 			case 0:
 				return &v.state
@@ -2755,7 +2755,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetFriendsGameplayInfo_Response); i {
 			case 0:
 				return &v.state
@@ -2767,7 +2767,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetGameBadgeLevels_Request); i {
 			case 0:
 				return &v.state
@@ -2779,7 +2779,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetGameBadgeLevels_Response); i {
 			case 0:
 				return &v.state
@@ -2791,7 +2791,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetLastPlayedTimes_Request); i {
 			case 0:
 				return &v.state
@@ -2803,7 +2803,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetLastPlayedTimes_Response); i {
 			case 0:
 				return &v.state
@@ -2815,7 +2815,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_AcceptSSA_Request); i {
 			case 0:
 				return &v.state
@@ -2827,7 +2827,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_AcceptSSA_Response); i {
 			case 0:
 				return &v.state
@@ -2839,7 +2839,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetNicknameList_Request); i {
 			case 0:
 				return &v.state
@@ -2851,7 +2851,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetNicknameList_Response); i {
 			case 0:
 				return &v.state
@@ -2863,7 +2863,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetPerFriendPreferences_Request); i {
 			case 0:
 				return &v.state
@@ -2875,7 +2875,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*PerFriendPreferences); i {
 			case 0:
 				return &v.state
@@ -2887,7 +2887,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetPerFriendPreferences_Response); i {
 			case 0:
 				return &v.state
@@ -2899,7 +2899,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_SetPerFriendPreferences_Request); i {
 			case 0:
 				return &v.state
@@ -2911,7 +2911,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_SetPerFriendPreferences_Response); i {
 			case 0:
 				return &v.state
@@ -2923,7 +2923,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_AddFriend_Request); i {
 			case 0:
 				return &v.state
@@ -2935,7 +2935,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_AddFriend_Response); i {
 			case 0:
 				return &v.state
@@ -2947,7 +2947,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_RemoveFriend_Request); i {
 			case 0:
 				return &v.state
@@ -2959,7 +2959,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_RemoveFriend_Response); i {
 			case 0:
 				return &v.state
@@ -2971,7 +2971,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_IgnoreFriend_Request); i {
 			case 0:
 				return &v.state
@@ -2983,7 +2983,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_IgnoreFriend_Response); i {
 			case 0:
 				return &v.state
@@ -2995,7 +2995,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetCommunityPreferences_Request); i {
 			case 0:
 				return &v.state
@@ -3007,7 +3007,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_CommunityPreferences); i {
 			case 0:
 				return &v.state
@@ -3019,7 +3019,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetCommunityPreferences_Response); i {
 			case 0:
 				return &v.state
@@ -3031,7 +3031,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_SetCommunityPreferences_Request); i {
 			case 0:
 				return &v.state
@@ -3043,7 +3043,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_SetCommunityPreferences_Response); i {
 			case 0:
 				return &v.state
@@ -3055,7 +3055,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetNewSteamAnnouncementState_Request); i {
 			case 0:
 				return &v.state
@@ -3067,7 +3067,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetNewSteamAnnouncementState_Response); i {
 			case 0:
 				return &v.state
@@ -3079,7 +3079,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[31].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_UpdateSteamAnnouncementLastRead_Request); i {
 			case 0:
 				return &v.state
@@ -3091,7 +3091,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[32].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_UpdateSteamAnnouncementLastRead_Response); i {
 			case 0:
 				return &v.state
@@ -3103,7 +3103,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[33].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetFriendsGameplayInfo_Response_FriendsGameplayInfo); i {
 			case 0:
 				return &v.state
@@ -3115,7 +3115,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[34].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetFriendsGameplayInfo_Response_OwnGameplayInfo); i {
 			case 0:
 				return &v.state
@@ -3127,7 +3127,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[35].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetGameBadgeLevels_Response_Badge); i {
 			case 0:
 				return &v.state
@@ -3139,7 +3139,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[36].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetLastPlayedTimes_Response_Game); i {
 			case 0:
 				return &v.state
@@ -3151,7 +3151,7 @@ func file_steammessages_player_steamworkssdk_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_player_steamworkssdk_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_player_steamworkssdk_proto_msgTypes[37].Exporter = func(v any, i int) any {
 			switch v := v.(*CPlayer_GetNicknameList_Response_PlayerNickname); i {
 			case 0:
 				return &v.state

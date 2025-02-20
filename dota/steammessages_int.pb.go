@@ -5922,7 +5922,7 @@ func file_steammessages_int_proto_init() {
 	}
 	file_steammessages_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_steammessages_int_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_int_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgWebAPIKey); i {
 			case 0:
 				return &v.state
@@ -5934,7 +5934,7 @@ func file_steammessages_int_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_int_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_int_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgHttpRequest); i {
 			case 0:
 				return &v.state
@@ -5946,7 +5946,7 @@ func file_steammessages_int_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_int_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_int_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgWebAPIRequest); i {
 			case 0:
 				return &v.state
@@ -5958,7 +5958,7 @@ func file_steammessages_int_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_int_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_int_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgHttpResponse); i {
 			case 0:
 				return &v.state
@@ -5970,7 +5970,7 @@ func file_steammessages_int_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_int_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_int_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAMFindAccounts); i {
 			case 0:
 				return &v.state
@@ -5982,7 +5982,7 @@ func file_steammessages_int_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_int_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_int_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAMFindAccountsResponse); i {
 			case 0:
 				return &v.state
@@ -5994,7 +5994,7 @@ func file_steammessages_int_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_int_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_int_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgNotifyWatchdog); i {
 			case 0:
 				return &v.state
@@ -6006,7 +6006,7 @@ func file_steammessages_int_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_int_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_int_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAMGetLicenses); i {
 			case 0:
 				return &v.state
@@ -6018,7 +6018,7 @@ func file_steammessages_int_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_int_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_int_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPackageLicense); i {
 			case 0:
 				return &v.state
@@ -6030,7 +6030,7 @@ func file_steammessages_int_proto_init() {
 				return nil
 			}
 		}
-		file_steammessages_int_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_steammessages_int_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAMGetLicensesResponse); i {
 			case 0:
 				return &v.state

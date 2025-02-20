@@ -5496,7 +5496,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 	file_base_gcmessages_proto_init()
 	file_dota_gcmessages_common_lobby_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_dota_gcmessages_client_match_management_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgStartFindingMatch); i {
 			case 0:
 				return &v.state
@@ -5508,7 +5508,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgStartFindingMatchResult); i {
 			case 0:
 				return &v.state
@@ -5520,7 +5520,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgStopFindingMatch); i {
 			case 0:
 				return &v.state
@@ -5532,7 +5532,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPartyBuilderOptions); i {
 			case 0:
 				return &v.state
@@ -5544,7 +5544,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgReadyUp); i {
 			case 0:
 				return &v.state
@@ -5556,7 +5556,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgReadyUpStatus); i {
 			case 0:
 				return &v.state
@@ -5568,7 +5568,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgAbandonCurrentGame); i {
 			case 0:
 				return &v.state
@@ -5580,7 +5580,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgLobbyScenarioSave); i {
 			case 0:
 				return &v.state
@@ -5592,7 +5592,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbySetDetails); i {
 			case 0:
 				return &v.state
@@ -5604,7 +5604,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyCreate); i {
 			case 0:
 				return &v.state
@@ -5616,7 +5616,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbySetTeamSlot); i {
 			case 0:
 				return &v.state
@@ -5628,7 +5628,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbySetCoach); i {
 			case 0:
 				return &v.state
@@ -5640,7 +5640,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyJoinBroadcastChannel); i {
 			case 0:
 				return &v.state
@@ -5652,7 +5652,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyCloseBroadcastChannel); i {
 			case 0:
 				return &v.state
@@ -5664,7 +5664,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyToggleBroadcastChannelCameramanStatus); i {
 			case 0:
 				return &v.state
@@ -5676,7 +5676,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyKick); i {
 			case 0:
 				return &v.state
@@ -5688,7 +5688,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyKickFromTeam); i {
 			case 0:
 				return &v.state
@@ -5700,7 +5700,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyLeave); i {
 			case 0:
 				return &v.state
@@ -5712,7 +5712,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyLaunch); i {
 			case 0:
 				return &v.state
@@ -5724,7 +5724,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgApplyTeamToPracticeLobby); i {
 			case 0:
 				return &v.state
@@ -5736,7 +5736,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyList); i {
 			case 0:
 				return &v.state
@@ -5748,7 +5748,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyListResponseEntry); i {
 			case 0:
 				return &v.state
@@ -5760,7 +5760,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyListResponse); i {
 			case 0:
 				return &v.state
@@ -5772,7 +5772,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgLobbyList); i {
 			case 0:
 				return &v.state
@@ -5784,7 +5784,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgLobbyListResponse); i {
 			case 0:
 				return &v.state
@@ -5796,7 +5796,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyJoin); i {
 			case 0:
 				return &v.state
@@ -5808,7 +5808,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbyJoinResponse); i {
 			case 0:
 				return &v.state
@@ -5820,7 +5820,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgFriendPracticeLobbyListRequest); i {
 			case 0:
 				return &v.state
@@ -5832,7 +5832,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgFriendPracticeLobbyListResponse); i {
 			case 0:
 				return &v.state
@@ -5844,7 +5844,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgJoinableCustomGameModesRequest); i {
 			case 0:
 				return &v.state
@@ -5856,7 +5856,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgJoinableCustomGameModesResponseEntry); i {
 			case 0:
 				return &v.state
@@ -5868,7 +5868,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[31].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgJoinableCustomGameModesResponse); i {
 			case 0:
 				return &v.state
@@ -5880,7 +5880,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[32].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgJoinableCustomLobbiesRequest); i {
 			case 0:
 				return &v.state
@@ -5892,7 +5892,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[33].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgJoinableCustomLobbiesResponseEntry); i {
 			case 0:
 				return &v.state
@@ -5904,7 +5904,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[34].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgJoinableCustomLobbiesResponse); i {
 			case 0:
 				return &v.state
@@ -5916,7 +5916,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[35].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgQuickJoinCustomLobby); i {
 			case 0:
 				return &v.state
@@ -5928,7 +5928,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[36].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgQuickJoinCustomLobbyResponse); i {
 			case 0:
 				return &v.state
@@ -5940,7 +5940,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[37].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgBotGameCreate); i {
 			case 0:
 				return &v.state
@@ -5952,7 +5952,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[38].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTAPartyMemberSetCoach); i {
 			case 0:
 				return &v.state
@@ -5964,7 +5964,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[39].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTASetGroupLeader); i {
 			case 0:
 				return &v.state
@@ -5976,7 +5976,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[40].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[40].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTACancelGroupInvites); i {
 			case 0:
 				return &v.state
@@ -5988,7 +5988,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[41].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[41].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTASetGroupOpenStatus); i {
 			case 0:
 				return &v.state
@@ -6000,7 +6000,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[42].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTAGroupMergeInvite); i {
 			case 0:
 				return &v.state
@@ -6012,7 +6012,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[43].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[43].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTAGroupMergeResponse); i {
 			case 0:
 				return &v.state
@@ -6024,7 +6024,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[44].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[44].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgDOTAGroupMergeReply); i {
 			case 0:
 				return &v.state
@@ -6036,7 +6036,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[45].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[45].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSpectatorLobbyGameDetails); i {
 			case 0:
 				return &v.state
@@ -6048,7 +6048,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[46].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[46].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSetSpectatorLobbyDetails); i {
 			case 0:
 				return &v.state
@@ -6060,7 +6060,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[47].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[47].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgCreateSpectatorLobby); i {
 			case 0:
 				return &v.state
@@ -6072,7 +6072,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[48].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[48].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSpectatorLobbyList); i {
 			case 0:
 				return &v.state
@@ -6084,7 +6084,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[49].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[49].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgSpectatorLobbyListResponse); i {
 			case 0:
 				return &v.state
@@ -6096,7 +6096,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[50].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[50].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCRequestSteamDatagramTicket); i {
 			case 0:
 				return &v.state
@@ -6108,7 +6108,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[51].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[51].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCRequestSteamDatagramTicketResponse); i {
 			case 0:
 				return &v.state
@@ -6120,7 +6120,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[52].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[52].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientSteamDatagramTicket); i {
 			case 0:
 				return &v.state
@@ -6132,7 +6132,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[53].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[53].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientRequestLaneSelection); i {
 			case 0:
 				return &v.state
@@ -6144,7 +6144,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[54].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[54].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientRequestLaneSelectionResponse); i {
 			case 0:
 				return &v.state
@@ -6156,7 +6156,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[55].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[55].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgGCToClientRequestMMInfo); i {
 			case 0:
 				return &v.state
@@ -6168,7 +6168,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[56].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[56].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCMMInfo); i {
 			case 0:
 				return &v.state
@@ -6180,7 +6180,7 @@ func file_dota_gcmessages_client_match_management_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_match_management_proto_msgTypes[57].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_match_management_proto_msgTypes[57].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgPracticeLobbySetDetails_AbilityDraftSpecificDetails); i {
 			case 0:
 				return &v.state

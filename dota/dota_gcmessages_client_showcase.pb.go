@@ -5979,9 +5979,9 @@ var file_dota_gcmessages_client_showcase_proto_rawDesc = []byte{
 	0x65, 0x10, 0x08, 0x12, 0x2d, 0x0a, 0x29, 0x6b, 0x5f, 0x65, 0x53, 0x68, 0x6f, 0x77, 0x63, 0x61,
 	0x73, 0x65, 0x49, 0x74, 0x65, 0x6d, 0x46, 0x6c, 0x61, 0x67, 0x5f, 0x48, 0x65, 0x72, 0x6f, 0x5f,
 	0x48, 0x65, 0x72, 0x6f, 0x43, 0x61, 0x72, 0x64, 0x55, 0x73, 0x65, 0x4d, 0x6f, 0x76, 0x69, 0x65,
-	0x10, 0x10, 0x42, 0x25, 0x5a, 0x23, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d,
-	0x2f, 0x64, 0x6f, 0x74, 0x61, 0x62, 0x75, 0x66, 0x66, 0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f,
-	0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
+	0x10, 0x10, 0x42, 0x2c, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d,
+	0x2f, 0x69, 0x6d, 0x70, 0x72, 0x69, 0x6e, 0x74, 0x2d, 0x65, 0x73, 0x70, 0x6f, 0x72, 0x74, 0x73,
+	0x2f, 0x6d, 0x61, 0x6e, 0x74, 0x61, 0x2f, 0x64, 0x6f, 0x74, 0x61, 0x3b, 0x64, 0x6f, 0x74, 0x61,
 }
 
 var (
@@ -5998,7 +5998,7 @@ func file_dota_gcmessages_client_showcase_proto_rawDescGZIP() []byte {
 
 var file_dota_gcmessages_client_showcase_proto_enumTypes = make([]protoimpl.EnumInfo, 20)
 var file_dota_gcmessages_client_showcase_proto_msgTypes = make([]protoimpl.MessageInfo, 60)
-var file_dota_gcmessages_client_showcase_proto_goTypes = []interface{}{
+var file_dota_gcmessages_client_showcase_proto_goTypes = []any{
 	(EShowcaseHeroPlusFlag)(0),                                             // 0: dota.EShowcaseHeroPlusFlag
 	(EShowcaseType)(0),                                                     // 1: dota.EShowcaseType
 	(EShowcaseItemState)(0),                                                // 2: dota.EShowcaseItemState
@@ -6191,7 +6191,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 	file_dota_gcmessages_client_proto_init()
 	file_valveextensions_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_dota_gcmessages_client_showcase_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseEconItemReference); i {
 			case 0:
 				return &v.state
@@ -6203,7 +6203,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[1].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgHeroPlusInfo); i {
 			case 0:
 				return &v.state
@@ -6215,7 +6215,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[2].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_Trophy); i {
 			case 0:
 				return &v.state
@@ -6227,7 +6227,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[3].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_EconItem); i {
 			case 0:
 				return &v.state
@@ -6239,7 +6239,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[4].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_Hero); i {
 			case 0:
 				return &v.state
@@ -6251,7 +6251,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[5].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_HeroIcon); i {
 			case 0:
 				return &v.state
@@ -6263,7 +6263,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[6].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_PlayerMatch); i {
 			case 0:
 				return &v.state
@@ -6275,7 +6275,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[7].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_ChatWheel); i {
 			case 0:
 				return &v.state
@@ -6287,7 +6287,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[8].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_Emoticon); i {
 			case 0:
 				return &v.state
@@ -6299,7 +6299,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[9].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_SpiderGraph); i {
 			case 0:
 				return &v.state
@@ -6311,7 +6311,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[10].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[10].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_UserFeed); i {
 			case 0:
 				return &v.state
@@ -6323,7 +6323,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[11].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[11].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_Stat); i {
 			case 0:
 				return &v.state
@@ -6335,7 +6335,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[12].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[12].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseBackground); i {
 			case 0:
 				return &v.state
@@ -6347,7 +6347,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[13].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[13].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItemData); i {
 			case 0:
 				return &v.state
@@ -6359,7 +6359,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[14].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[14].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItemPosition); i {
 			case 0:
 				return &v.state
@@ -6371,7 +6371,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[15].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[15].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem); i {
 			case 0:
 				return &v.state
@@ -6383,7 +6383,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[16].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[16].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcase); i {
 			case 0:
 				return &v.state
@@ -6395,7 +6395,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[17].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[17].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseGetUserData); i {
 			case 0:
 				return &v.state
@@ -6407,7 +6407,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[18].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[18].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseGetUserDataResponse); i {
 			case 0:
 				return &v.state
@@ -6419,7 +6419,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[19].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[19].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseSetUserData); i {
 			case 0:
 				return &v.state
@@ -6431,7 +6431,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[20].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[20].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseSetUserDataResponse); i {
 			case 0:
 				return &v.state
@@ -6443,7 +6443,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[21].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[21].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseSubmitReport); i {
 			case 0:
 				return &v.state
@@ -6455,7 +6455,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[22].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[22].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseSubmitReportResponse); i {
 			case 0:
 				return &v.state
@@ -6467,7 +6467,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[23].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[23].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseReportsRollupInfo); i {
 			case 0:
 				return &v.state
@@ -6479,7 +6479,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[24].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[24].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseReportsRollupList); i {
 			case 0:
 				return &v.state
@@ -6491,7 +6491,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[25].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[25].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseReportsRollupEntry); i {
 			case 0:
 				return &v.state
@@ -6503,7 +6503,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[26].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[26].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseReportsRollup); i {
 			case 0:
 				return &v.state
@@ -6515,7 +6515,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[27].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[27].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminGetReportsRollupList); i {
 			case 0:
 				return &v.state
@@ -6527,7 +6527,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[28].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[28].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminGetReportsRollupListResponse); i {
 			case 0:
 				return &v.state
@@ -6539,7 +6539,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[29].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[29].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminGetReportsRollup); i {
 			case 0:
 				return &v.state
@@ -6551,7 +6551,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[30].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[30].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminGetReportsRollupResponse); i {
 			case 0:
 				return &v.state
@@ -6563,7 +6563,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[31].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[31].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseAuditEntry); i {
 			case 0:
 				return &v.state
@@ -6575,7 +6575,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[32].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseReport); i {
 			case 0:
 				return &v.state
@@ -6587,7 +6587,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[33].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseAdminUserDetails); i {
 			case 0:
 				return &v.state
@@ -6599,7 +6599,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[34].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminGetUserDetails); i {
 			case 0:
 				return &v.state
@@ -6611,7 +6611,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[35].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminGetUserDetailsResponse); i {
 			case 0:
 				return &v.state
@@ -6623,7 +6623,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[36].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminReset); i {
 			case 0:
 				return &v.state
@@ -6635,7 +6635,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[37].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminResetResponse); i {
 			case 0:
 				return &v.state
@@ -6647,7 +6647,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[38].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminLockAccount); i {
 			case 0:
 				return &v.state
@@ -6659,7 +6659,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[39].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminLockAccountResponse); i {
 			case 0:
 				return &v.state
@@ -6671,7 +6671,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[40].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[40].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminConvict); i {
 			case 0:
 				return &v.state
@@ -6683,7 +6683,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[41].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[41].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminConvictResponse); i {
 			case 0:
 				return &v.state
@@ -6695,7 +6695,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[42].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[42].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminExonerate); i {
 			case 0:
 				return &v.state
@@ -6707,7 +6707,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[43].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[43].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseAdminExonerateResponse); i {
 			case 0:
 				return &v.state
@@ -6719,7 +6719,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[44].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[44].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseModerationInfo); i {
 			case 0:
 				return &v.state
@@ -6731,7 +6731,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[45].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[45].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseModerationGetQueue); i {
 			case 0:
 				return &v.state
@@ -6743,7 +6743,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[46].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[46].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseModerationGetQueueResponse); i {
 			case 0:
 				return &v.state
@@ -6755,7 +6755,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[47].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[47].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseModerationApplyModeration); i {
 			case 0:
 				return &v.state
@@ -6767,7 +6767,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[48].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[48].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgClientToGCShowcaseModerationApplyModerationResponse); i {
 			case 0:
 				return &v.state
@@ -6779,7 +6779,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[49].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[49].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_Trophy_Data); i {
 			case 0:
 				return &v.state
@@ -6791,7 +6791,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[50].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[50].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_EconItem_Data); i {
 			case 0:
 				return &v.state
@@ -6803,7 +6803,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[51].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[51].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_Hero_Data); i {
 			case 0:
 				return &v.state
@@ -6815,7 +6815,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[52].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[52].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_HeroIcon_Data); i {
 			case 0:
 				return &v.state
@@ -6827,7 +6827,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[53].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[53].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_PlayerMatch_Data); i {
 			case 0:
 				return &v.state
@@ -6839,7 +6839,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[54].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[54].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_ChatWheel_Data); i {
 			case 0:
 				return &v.state
@@ -6851,7 +6851,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[55].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[55].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_Emoticon_Data); i {
 			case 0:
 				return &v.state
@@ -6863,7 +6863,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[56].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[56].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_SpiderGraph_Data); i {
 			case 0:
 				return &v.state
@@ -6875,7 +6875,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[57].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[57].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_UserFeed_Data); i {
 			case 0:
 				return &v.state
@@ -6887,7 +6887,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[58].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[58].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseItem_Stat_Data); i {
 			case 0:
 				return &v.state
@@ -6899,7 +6899,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 				return nil
 			}
 		}
-		file_dota_gcmessages_client_showcase_proto_msgTypes[59].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_showcase_proto_msgTypes[59].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgShowcaseBackground_Data); i {
 			case 0:
 				return &v.state
@@ -6912,7 +6912,7 @@ func file_dota_gcmessages_client_showcase_proto_init() {
 			}
 		}
 	}
-	file_dota_gcmessages_client_showcase_proto_msgTypes[13].OneofWrappers = []interface{}{
+	file_dota_gcmessages_client_showcase_proto_msgTypes[13].OneofWrappers = []any{
 		(*CMsgShowcaseItemData_Trophy)(nil),
 		(*CMsgShowcaseItemData_EconItemIcon)(nil),
 		(*CMsgShowcaseItemData_Sticker)(nil),

@@ -2460,7 +2460,7 @@ func file_dota_gcmessages_client_bingo_proto_init() {
 	file_dota_gcmessages_client_proto_init()
 	file_valveextensions_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_dota_gcmessages_client_bingo_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_dota_gcmessages_client_bingo_proto_msgTypes[0].Exporter = func(v any, i int) any {
 			switch v := v.(*CMsgBingoSquare); i {
 			case 0:
 				return &v.state
