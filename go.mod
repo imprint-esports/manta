@@ -1,6 +1,6 @@
 module github.com/imprint-esports/manta
 
-go 1.18
+go 1.24.0
 
 require (
 	github.com/davecgh/go-spew v1.1.0
