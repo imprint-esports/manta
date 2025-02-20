@@ -3,6 +3,7 @@ syntax = "proto2";
 package dota;
 option go_package = "github.com/imprint-esports/manta/dota;dota";
 
+import "valveextensions.proto";
 import "steammessages.proto";
 import "steammessages_steamlearn.steamworkssdk.proto";
 
