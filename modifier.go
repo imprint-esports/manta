@@ -1,8 +1,8 @@
 package manta
 
 import (
-	"github.com/dotabuff/manta/dota"
 	"github.com/golang/protobuf/proto"
+	"github.com/imprint-esports/manta/dota"
 )
 
 type ModifierTableEntryHandler func(msg *dota.CDOTAModifierBuffTableEntry) error
