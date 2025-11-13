@@ -186,19 +186,19 @@ func (p *Parser) FindEntity(index int32) *Entity {
 const (
 	// SOURCE2
 	indexBits  uint64 = 14
-	handleMask uint64 = (1 << indexBits) - 1
+	handleMask uint32 = (1 << indexBits) - 1
 )
 
-func handle2idx(handle uint64) int32 {
+func handle2idx(handle uint32) int32 {
 	return int32(handle & handleMask)
 }
 
-func serialForHandle(handle uint64) int32 {
+func serialForHandle(handle uint32) int32 {
 	return int32(handle >> indexBits)
 }
 
 // FindEntityByHandle finds a given Entity by handle
-func (p *Parser) FindEntityByHandle(handle uint64) *Entity {
+func (p *Parser) FindEntityByHandle(handle uint32) *Entity {
 	idx := handle2idx(handle)
 	e := p.FindEntity(idx)
 	if e != nil && e.GetSerial() != serialForHandle(handle) {
