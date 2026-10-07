@@ -112,6 +112,24 @@ func fixed64Decoder(r *reader) interface{} {
 	return r.readLeUint64()
 }
 
+// fixed8 (added around game build 6951) encodes 8-bit integer and enum fields
+// as a single raw byte instead of a varint. Return types match the varint
+// decoders so callers see the same types.
+func fixed8Factory(baseType string) fieldDecoder {
+	if baseType == "int8" {
+		return fixed8SignedDecoder
+	}
+	return fixed8UnsignedDecoder
+}
+
+func fixed8UnsignedDecoder(r *reader) interface{} {
+	return uint64(r.readByte())
+}
+
+func fixed8SignedDecoder(r *reader) interface{} {
+	return int32(int8(r.readByte()))
+}
+
 func handleDecoder(r *reader) interface{} {
 	return r.readVarUint32()
 }
@@ -206,6 +224,10 @@ func componentDecoder(r *reader) interface{} {
 }
 
 func findDecoder(f *field) fieldDecoder {
+	if f.encoder == "fixed8" {
+		return fixed8Factory(f.fieldType.baseType)
+	}
+
 	if v, ok := fieldTypeFactories[f.fieldType.baseType]; ok {
 		return v(f)
 	}

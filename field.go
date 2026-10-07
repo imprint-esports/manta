@@ -99,6 +99,10 @@ func (f *field) setModel(model int) {
 		}
 		f.baseDecoder = unsignedDecoder
 		f.childDecoder = findDecoderByBaseType(f.fieldType.genericType.baseType)
+		// variable arrays never go through findDecoder, so handle fixed8 here too
+		if f.encoder == "fixed8" {
+			f.childDecoder = fixed8Factory(f.fieldType.genericType.baseType)
+		}
 
 	case fieldModelVariableTable:
 		f.baseDecoder = unsignedDecoder
